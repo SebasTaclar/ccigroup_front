@@ -1,29 +1,31 @@
-/* SOYDANI - Paleta de colores Rojo, Negro, Blanco */
+/* CCI Group - Paleta de colores: Azul (#001A70) y Rojo (#EE2A31) */
 :root {
-  /* Colores principales - Rojo, Negro, Blanco */
-  --primary-red: #DC2626;       /* Rojo principal */
-  --secondary-red: #EF4444;     /* Rojo claro */
-  --tertiary-red: #B91C1C;      /* Rojo medio */
-  --dark-red: #991B1B;          /* Rojo oscuro */
+  /* Colores principales de CCI Group */
+  --primary-red: #EE2A31;       /* Rojo CCI principal */
+  --secondary-red: #f24149;     /* Rojo claro */
+  --tertiary-red: #D41F26;      /* Rojo medio */
+  --dark-red: #C41620;          /* Rojo oscuro */
+  --primary-blue: #001A70;      /* Azul CCI principal */
   --white: #ffffff;             /* Blanco */
   --black: #000000;             /* Negro puro */
 
-  /* Paleta de marca SOYDANI */
-  --brand-primary: #DC2626;            /* Rojo principal */
-  --brand-primary-contrast: #ffffff;   /* Texto sobre superficies rojas */
+  /* Paleta de marca CCI Group */
+  --brand-primary: #EE2A31;            /* Rojo CCI */
+  --brand-primary-blue: #001A70;       /* Azul CCI */
+  --brand-primary-contrast: #ffffff;   /* Texto sobre superficies de marca */
   --brand-bg-start: #000000;           /* Negro puro inicio */
   --brand-bg-end: #1a1a1a;             /* Gris muy oscuro fin */
   --brand-surface: #0a0a0a;            /* Superficie cards/nav */
-  --brand-border: rgba(220, 38, 38, 0.3); /* Bordes rojos sutiles */
-  --brand-accent: #DC2626;             /* Acento rojo */
-  --brand-accent-alt: #EF4444;         /* Acento rojo claro */
-  --brand-accent-glow: rgba(220, 38, 38, 0.5);
-  --brand-gradient: linear-gradient(135deg, var(--brand-bg-start) 0%, var(--brand-bg-end) 100%);
+  --brand-border: rgba(238, 42, 49, 0.3); /* Bordes rojos sutiles */
+  --brand-accent: #EE2A31;             /* Acento rojo CCI */
+  --brand-accent-alt: #f24149;         /* Acento rojo claro */
+  --brand-accent-glow: rgba(238, 42, 49, 0.5);
+  --brand-gradient: linear-gradient(135deg, #EE2A31 0%, #001A70 100%);
   --brand-accent-gradient: linear-gradient(135deg, var(--brand-accent) 0%, var(--brand-accent-alt) 100%);
   --brand-danger: #ef4444;
   --brand-success: #10b981;
   --brand-warning: #f59e0b;
-  --brand-info: #DC2626;
+  --brand-info: #EE2A31;
 
   /* Colores adicionales */
   --light-gray: #f5f5f5;
@@ -33,14 +35,14 @@
   /* Colores de estado */
   --success: #4caf50;
   --warning: #ff9800;
-  --danger: #DC2626;
+  --danger: #EE2A31;
   --info: var(--secondary-red);
 
   /* Sombras modernas con efecto depth */
-  --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(220, 38, 38, 0.1);
-  --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(220, 38, 38, 0.15);
-  --shadow-heavy: 0 12px 32px rgba(0, 0, 0, 0.15), 0 4px 16px rgba(220, 38, 38, 0.2);
-  --shadow-hover: 0 16px 48px rgba(220, 38, 38, 0.25), 0 8px 24px rgba(0, 0, 0, 0.2);
+  --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(238, 42, 49, 0.1);
+  --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(238, 42, 49, 0.15);
+  --shadow-heavy: 0 12px 32px rgba(0, 0, 0, 0.15), 0 4px 16px rgba(238, 42, 49, 0.2);
+  --shadow-hover: 0 16px 48px rgba(238, 42, 49, 0.25), 0 8px 24px rgba(0, 0, 0, 0.2);
 
   /* Bordes redondeados modernos */
   --border-radius-sm: 6px;
