@@ -1577,7 +1577,7 @@ onUnmounted(() => stopAutoplay())
 }
 
 .remove-btn:hover {
-  background: #dc2626;
+  background: #EE2A31;
   transform: scale(1.1);
 }
 

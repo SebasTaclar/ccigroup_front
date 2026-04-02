@@ -1,2 +1,2 @@
-# soydani-front
-Project for soydani brand
+# CCI Group - Frontend
+Project for CCI Group - Soluciones empresariales profesionales

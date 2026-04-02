@@ -34,11 +34,7 @@ const router = createRouter({
       component: () => import('../views/IphonePage.vue'),
     },
 
-    {
-      path: '/mac',
-      name: 'mac',
-      component: () => import('../views/MacPage.vue'),
-    },
+
 
     {
       path: '/ipad',
