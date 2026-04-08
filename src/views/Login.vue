@@ -164,7 +164,9 @@ const clearCustomValidityMessage = (event: Event) => {
   color: var(--text-primary);
   margin: 0 0 0.5rem 0;
   text-shadow: 0 2px 4px var(--shadow-primary);
+  /* Título principal: Embrace Theories (var(--font-primary)) */
   font-family: var(--font-primary);
+  letter-spacing: 1px;
 }
 
 .login-header h2 {
@@ -173,7 +175,8 @@ const clearCustomValidityMessage = (event: Event) => {
   margin: 0;
   font-weight: 400;
   opacity: 0.9;
-  font-family: var(--font-primary);
+  /* Subtítulo: usar la fuente base del sitio (Raleway) */
+  font-family: var(--font-family);
 }
 
 .login-form {
@@ -192,7 +195,8 @@ const clearCustomValidityMessage = (event: Event) => {
   font-weight: 600;
   color: var(--text-primary);
   font-size: 0.95rem;
-  font-family: var(--font-primary);
+  /* Etiquetas: fuente base (Raleway) */
+  font-family: var(--font-family);
 }
 
 .form-input {
@@ -203,7 +207,8 @@ const clearCustomValidityMessage = (event: Event) => {
   border-radius: 12px;
   color: var(--text-primary);
   font-size: 1rem;
-  font-family: var(--font-primary);
+  /* Campos: fuente base para mayor legibilidad */
+  font-family: var(--font-family);
   backdrop-filter: var(--backdrop-blur);
   transition: all 0.3s ease;
   box-sizing: border-box;
@@ -239,7 +244,8 @@ const clearCustomValidityMessage = (event: Event) => {
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px var(--primary-color-alpha-30);
   backdrop-filter: blur(10px);
-  font-family: var(--font-primary);
+  /* Botón: fuente base consistente con el resto del sitio */
+  font-family: var(--font-family);
   margin-top: 1rem;
 }
 

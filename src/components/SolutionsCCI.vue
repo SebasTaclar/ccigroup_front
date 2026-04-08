@@ -146,7 +146,7 @@
 .title-underline {
   width: 100px;
   height: 4px;
-  background: linear-gradient(135deg, #ec4899 0%, #d946ef 100%);
+  background: linear-gradient(135deg, #be009f 0%, #be009f 100%);
   margin: 0 auto 20px;
   border-radius: 2px;
 }
@@ -186,7 +186,7 @@
 
 .solution-card:hover {
   background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(59, 130, 246, 0.1) 100%);
-  border-color: rgba(236, 72, 153, 0.4);
+  border-color: rgba(190, 0, 159, 0.4);
   transform: translateY(-12px);
 }
 
@@ -195,7 +195,7 @@
 }
 
 .solution-card.featured {
-  border: 2px solid rgba(236, 72, 153, 0.5);
+  border: 2px solid rgba(190, 0, 159, 0.5);
   background: linear-gradient(135deg, rgba(217, 70, 239, 0.15) 0%, rgba(139, 92, 246, 0.1) 100%);
   transform: scale(1.02);
 }
@@ -204,7 +204,7 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  background: linear-gradient(135deg, #ec4899 0%, #d946ef 100%);
+  background: linear-gradient(135deg, #be009f 0%, #be009f 100%);
   color: #ffffff;
   padding: 8px 16px;
   border-radius: 20px;
@@ -263,7 +263,7 @@
   content: '✓';
   position: absolute;
   left: 0;
-  color: #ec4899;
+  color: #be009f;
   font-weight: 700;
   font-size: 16px;
 }

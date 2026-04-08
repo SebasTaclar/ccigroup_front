@@ -32,6 +32,19 @@
   --medium-gray: #757575;
   --dark-gray: #424242;
 
+  /* Neutrales profesionales extendidos */
+  --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5f5;
+  --slate-600: #475569;
+  --slate-900: #0f172a;
+
+  /* Colores de acento adicionales */
+  --accent-amber: #f59e0b;
+  --accent-emerald: #10b981;
+  --accent-cyan: #06b6d4;
+
   /* Colores de estado */
   --success: #4caf50;
   --warning: #ff9800;
@@ -143,7 +156,8 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Usar la tipografía global definida en main.css (Raleway como base) */
+  font-family: var(--font-family);
   background-color: var(--app-bg-primary);
   color: var(--app-text-primary);
   line-height: 1.6;
@@ -270,6 +284,7 @@ body {
   margin-bottom: 0.5rem;
   line-height: 1.4;
   display: -webkit-box;
+  line-clamp: 2;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;

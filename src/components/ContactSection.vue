@@ -1,5 +1,5 @@
 <template>
-  <section class="contact-section">
+  <section class="contact-section" id="contact">
     <div class="contact-container">
       <div class="contact-wrapper">
         <!-- Formulario Izquierda -->
@@ -71,10 +71,10 @@
         <!-- Información Derecha -->
         <div class="info-column">
           <div class="info-content">
-            <h3 class="info-title">Déjanos un mensaje y<br>contacta con nosotros.</h3>
+            <h3 class="info-title">Déjanos un mensaje y<br>contacta con nosotros</h3>
 
             <p class="info-description">
-              ¿Tienes alguna pregunta o estás listo para comenzar? Déjanos un mensaje; ¡nos encantaría ponernos en contacto contigo!
+              ¿Tienes alguna pregunta o estás listo para comenzar? <br>Déjanos un mensaje; ¡nos encantaría ponernos en <br>contacto contigo!
             </p>
 
             <!-- Rating -->
@@ -131,7 +131,7 @@ const submitForm = async () => {
 <style scoped>
 .contact-section {
   padding: 80px clamp(20px, 5vw, 60px);
-  background: #f5f5f5;
+  background: #f4f4f4;
 }
 
 .contact-container {
@@ -163,9 +163,9 @@ const submitForm = async () => {
 }
 
 .form-title {
-  font-size: 28px;
-  font-weight: 700;
-  color: #000000;
+  font-size: 24px;
+  font-weight: 400;
+  color: #282828;
   margin: 0 0 30px 0;
   line-height: 1.3;
   letter-spacing: -0.5px;
@@ -215,7 +215,7 @@ const submitForm = async () => {
 .form-input:focus,
 .form-textarea:focus {
   outline: none;
-  border-color: #c084fc;
+  border-color: #be009f;
   box-shadow: 0 0 0 3px rgba(192, 132, 252, 0.1);
 }
 
@@ -228,7 +228,7 @@ const submitForm = async () => {
 
 .submit-button {
   padding: 14px 30px;
-  background: linear-gradient(135deg, #c084fc, #a855f7);
+  background: #be009f;
   color: #ffffff;
   border: none;
   border-radius: 25px;
@@ -243,8 +243,7 @@ const submitForm = async () => {
 
 .submit-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(192, 132, 252, 0.4);
-  background: linear-gradient(135deg, #a855f7, #9333ea);
+  background: #be009f;
 }
 
 .submit-button:active {
@@ -266,9 +265,9 @@ const submitForm = async () => {
 }
 
 .info-title {
-  font-size: 36px;
-  font-weight: 700;
-  color: #000000;
+  font-size: 24px;
+  font-weight: 400;
+  color: #282828;
   margin: 0;
   line-height: 1.3;
   letter-spacing: -0.5px;
@@ -303,9 +302,9 @@ const submitForm = async () => {
 }
 
 .rating-text {
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 600;
-  color: #000000;
+  color: #282828;
   margin: 0;
 }
 

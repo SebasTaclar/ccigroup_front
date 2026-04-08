@@ -6,7 +6,7 @@
         <div class="footer-grid">
           <!-- Columna 1: Marca -->
           <div class="footer-col brand-col">
-            <img src="/images/logofooter.png" alt="CCI Group Logo" class="footer-logo">
+            <img src="/images/logo.png" alt="CCI Group Logo" class="footer-logo">
             <p class="footer-brand-desc">
               CCI Group ofrece soluciones lingüísticas innovadoras que permiten el éxito de las organizaciones en un mundo globalizado.
             </p>
@@ -38,12 +38,12 @@
 
           <!-- Columna 4: Conectemos -->
           <div class="footer-col">
-            <h4 class="footer-col-title">¡Conéctemos!</h4>
+            <h4 class="footer-col-title">Conéctemos</h4>
             <p class="connect-text">Conéctate con nosotros hoy en las redes sociales.</p>
             <div class="social-icons">
               <a href="https://www.facebook.com/CCIGroupServices" target="_blank" rel="noopener" class="social-icon" title="Facebook">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5c-.563-.074-1.396-.146-2.568-.146-2.632 0-4.432 1.608-4.432 4.562v1.584z"/>
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                 </svg>
               </a>
               <a href="https://www.linkedin.com/company/cci-group---interpretation-&-translation" target="_blank" rel="noopener" class="social-icon" title="LinkedIn">
@@ -116,7 +116,7 @@
     <!-- Copyright -->
     <div class="footer-copyright">
       <div class="footer-container">
-        <p>&copy; 2026 CCI Group. Todos los derechos reservados.</p>
+        <p>&copy; Copyright © 2026 por DataOr | Desarrollado por DataOr.</p>
       </div>
     </div>
   </footer>
@@ -127,17 +127,17 @@
 </script>
 
 <style scoped>
-.cci-footer {
-  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+ .cci-footer {
+  background: #282828;
   color: #ffffff;
   font-family: inherit;
-  margin-top: 80px;
+  margin-top: 0;
 }
 
 /* Sección superior */
 .footer-top {
   padding: 60px 0 40px;
-  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+  background: #282828;
 }
 
 .footer-container {
@@ -160,14 +160,14 @@
 }
 
 .brand-col p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
-  color: #b0b0b0;
+  color: #ffffff;
   margin: 0;
 }
 
 .footer-logo {
-  width: 120px;
+  width: 180px;
   height: auto;
   object-fit: contain;
   margin-bottom: 8px;
@@ -182,7 +182,7 @@
 }
 
 .footer-brand-desc {
-  color: #999999;
+  color: #ffffff;
   font-size: 14px;
   line-height: 1.6;
   margin: 0;
@@ -190,7 +190,7 @@
 
 .footer-col-title {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   color: #ffffff;
   margin: 0;
   text-transform: capitalize;
@@ -205,7 +205,7 @@
   left: 0;
   width: 50px;
   height: 2px;
-  background: #d946ef;
+  background: #be009f;
 }
 
 .footer-links {
@@ -222,9 +222,9 @@
 }
 
 .footer-links a {
-  color: #999999;
+  color: #ffffff;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   transition: color 0.3s ease;
   display: flex;
   align-items: center;
@@ -233,8 +233,8 @@
 
 .footer-links a::before {
   content: '▸';
-  color: #d946ef;
-  font-size: 10px;
+  color: #be009f;
+  font-size: 20px;
 }
 
 .footer-links a:hover {
@@ -242,8 +242,8 @@
 }
 
 .connect-text {
-  font-size: 14px;
-  color: #999999;
+  font-size: 16px;
+  color: #ffffff;
   margin: 0;
   line-height: 1.5;
 }
@@ -267,14 +267,14 @@
 }
 
 .social-icon:hover {
-  background: #d946ef;
+  background: #be009f;
   color: #ffffff;
   transform: translateY(-3px);
 }
 
 /* Sección inferior - Información de contacto */
 .footer-bottom {
-  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+  background: #282828;
   padding: 50px 0;
   border-top: 1px solid #404040;
 }
@@ -295,24 +295,33 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
-  background: rgba(217, 70, 239, 0.1);
-  border-radius: 8px;
-  color: #d946ef;
+  width: 52px;
+  height: 52px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover .contact-icon {
+  background: #be009f;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
 }
 
 .contact-details h5 {
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 400;
   color: #ffffff;
   margin: 0 0 4px 0;
   text-transform: capitalize;
 }
 
 .contact-details p {
-  font-size: 14px;
-  color: #999999;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
   margin: 0;
   line-height: 1.5;
 }
@@ -328,7 +337,7 @@
   padding: 20px 0;
   text-align: center;
   background: #2a2a2a;
-  color: #666666;
+  color: #ffffff;
   font-size: 13px;
 }
 
@@ -361,6 +370,21 @@
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 30px;
+    text-align: center;
+  }
+
+  .footer-col {
+    align-items: center;
+  }
+
+  .brand-col p,
+  .footer-brand-desc,
+  .connect-text {
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin: 0 auto 8px;
   }
 
   .footer-bottom {
@@ -370,6 +394,17 @@
   .contact-info {
     grid-template-columns: 1fr;
     gap: 20px;
+    justify-items: center;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links a {
+    justify-content: center;
   }
 
   .footer-col-title::after {

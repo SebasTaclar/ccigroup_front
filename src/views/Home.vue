@@ -6,10 +6,6 @@
     </section>
 
     <section class="section">
-      <DistinguishSection />
-    </section>
-
-    <section class="section">
       <ContactSection />
     </section>
 
@@ -27,9 +23,7 @@
 <script setup lang="ts">
 import { ref, defineAsyncComponent } from 'vue'
 import MainBanner from '@/components/MainBanner.vue';
-
 // Carga diferida (code splitting) de secciones pesadas
-const DistinguishSection = defineAsyncComponent(() => import('@/components/DistinguishSection.vue'))
 const ContactSection = defineAsyncComponent(() => import('@/components/ContactSection.vue'))
 
 // Estado del modal de reglas

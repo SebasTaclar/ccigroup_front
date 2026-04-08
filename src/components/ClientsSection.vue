@@ -1,8 +1,8 @@
 <template>
   <section class="clients-section" id="clients">
     <div class="container">
-      <h2 class="section-title">Nuestros Clientes</h2>
-      <p class="section-subtitle">Empresas que confían en CCI Group</p>
+      <h2 class="section-title">Nuestros Clientes <span class="rating-number">/</span> Socios</h2>
+      <p class="section-subtitle">Empresas que confían en Nosotros</p>
     </div>
 
     <div class="clients-carousel">
@@ -89,10 +89,11 @@
 }
 
 .section-title {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 32px;
   text-align: center;
-  color: #001a70;
+  font-weight: 400;
+  line-height: 1.6em;
+  color: #282828;
   margin-bottom: 10px;
 }
 
@@ -101,10 +102,10 @@
   color: #666;
   font-size: 1.1rem;
   margin-bottom: 50px;
+  font-family: var(--font-secondary);
 }
 
 .clients-carousel {
-  overflow: hidden;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
 }
@@ -112,7 +113,7 @@
 .clients-track {
   display: flex;
   gap: 40px;
-  padding: 0 20px;
+  padding: 10px 20px;
   animation: scroll-left 25s linear infinite;
   width: max-content;
 }
@@ -130,8 +131,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
-  min-width: 150px;
+  height: 140px;
+  min-width: 260px;
   flex-shrink: 0;
 }
 
@@ -141,6 +142,9 @@
   justify-content: center;
   width: 100%;
   height: 100%;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
 }
 
 .client-logo img {
