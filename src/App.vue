@@ -1,6 +1,11 @@
 <template>
   <header>
-    <nav class="navbar">
+    <nav
+      class="navbar"
+      :class="{ 'navbar--transparent': isNavbarTransparent && !isMobileMenuOpen }"
+      role="navigation"
+      aria-label="Navegación principal"
+    >
       <!-- Logo y marca CCI Group -->
       <RouterLink class="link-navbar home" to="/" @click="closeMobileMenu">
         <div class="brand-container">
@@ -10,38 +15,102 @@
 
       <!-- Navegación principal -->
       <div class="nav-menu desktop-nav">
-        <a href="#about" class="nav-link" @click="closeMobileMenu">Acerca de</a>
-        <a href="#solutions" class="nav-link" @click="closeMobileMenu">Soluciones</a>
-        <a href="#industries" class="nav-link" @click="closeMobileMenu">Industrias</a>
-        <a href="#fogonadua" class="nav-link" @click="closeMobileMenu">Fogonadua</a>
-        <a href="#notarization" class="nav-link" @click="closeMobileMenu">Notarización</a>
-        <a href="#resources" class="nav-link" @click="closeMobileMenu">Recursos</a>
+        <a href="#home" class="nav-link" @click="closeMobileMenu">INICIO</a>
+
+        <div class="nav-item nav-item--dropdown">
+          <button type="button" class="nav-link nav-link--dropdown">
+            ACERCA DE
+            <span class="nav-caret">▾</span>
+          </button>
+          <div class="dropdown-menu">
+            <a href="#about" class="dropdown-link" @click="closeMobileMenu">Acerca de CCI Group</a>
+            <a href="#about-team" class="dropdown-link" @click="closeMobileMenu">Nuestro equipo</a>
+            <a href="#about-careers" class="dropdown-link" @click="closeMobileMenu">Carreras profesionales</a>
+          </div>
+        </div>
+
+        <a href="#solutions" class="nav-link" @click="closeMobileMenu">SOLUCIONES </a>
+        <a href="#industries" class="nav-link" @click="closeMobileMenu">INDUSTRIAS</a>
+        <a href="#fogonadua" class="nav-link" @click="closeMobileMenu">SOCIOS</a>
+        <a href="#notarization" class="nav-link" @click="closeMobileMenu">NOTARIZACIÓN</a>
+
+        <div class="nav-item nav-item--dropdown">
+          <button type="button" class="nav-link nav-link--dropdown">
+            RECURSOS
+            <span class="nav-caret">▾</span>
+          </button>
+          <div class="dropdown-menu">
+            <a href="#resources" class="dropdown-link" @click="closeMobileMenu">Blog y noticias</a>
+            <a href="#resources" class="dropdown-link" @click="closeMobileMenu">Podcast</a>
+          </div>
+        </div>
       </div>
 
       <!-- Botón de contacto y página principal -->
       <div class="nav-controls desktop-nav">
-        <a href="https://a7oqb2wb89ps4x.projectwebtec9.com/" target="_blank" rel="noopener" class="btn main-page-btn">Ir a página principal</a>
-        <button class="btn contact-btn" @click="handleContact">Contáctanos <span class="arrow">›</span></button>
+        <a
+          href="https://a7oqb2wb89ps4x.projectwebtec9.com/"
+          target="_blank"
+          rel="noopener"
+          class="btn main-page-btn"
+        >IR A PÁGINA<br>PRINCIPAL</a>
+        <button class="btn contact-btn" @click="handleContact">CONTÁCTANOS <span class="arrow">›</span></button>
       </div>
 
       <!-- Menu hamburguesa para mobile -->
-      <button class="hamburger-menu" @click="toggleMobileMenu" :class="{ 'active': isMobileMenuOpen }">
+      <button
+        class="hamburger-menu"
+        type="button"
+        @click="toggleMobileMenu"
+        :class="{ 'active': isMobileMenuOpen }"
+        :aria-expanded="isMobileMenuOpen ? 'true' : 'false'"
+        aria-controls="mobile-menu"
+        :aria-label="isMobileMenuOpen ? 'Cerrar menú de navegación' : 'Abrir menú de navegación'"
+      >
         <span></span>
         <span></span>
         <span></span>
       </button>
 
       <!-- Menu mobile desplegable -->
-      <div class="mobile-menu" :class="{ 'active': isMobileMenuOpen }">
+      <div
+        id="mobile-menu"
+        class="mobile-menu"
+        :class="{ 'active': isMobileMenuOpen }"
+        role="dialog"
+        aria-modal="true"
+      >
         <div class="mobile-menu-content">
           <div class="mobile-nav-links">
-            <a href="#home" class="mobile-link" @click="closeMobileMenu">HOGAR</a>
-            <a href="#about" class="mobile-link" @click="closeMobileMenu">ACERCA DE</a>
+            <a href="#home" class="mobile-link" @click="closeMobileMenu">INICIO</a>
+
+            <div class="mobile-accordion-item">
+              <button type="button" class="mobile-link mobile-link--accordion" @click="toggleMobileAbout">
+                ACERCA DE
+                <span class="mobile-caret" :class="{ open: isMobileAboutOpen }">▾</span>
+              </button>
+              <div class="mobile-submenu" :class="{ open: isMobileAboutOpen }">
+                <a href="#about" class="mobile-sublink" @click="closeMobileMenu">Acerca de CCI Group</a>
+                <a href="#about-team" class="mobile-sublink" @click="closeMobileMenu">Nuestro equipo</a>
+                <a href="#about-careers" class="mobile-sublink" @click="closeMobileMenu">Carreras profesionales</a>
+              </div>
+            </div>
+
             <a href="#solutions" class="mobile-link" @click="closeMobileMenu">SOLUCIONES</a>
             <a href="#industries" class="mobile-link" @click="closeMobileMenu">INDUSTRIAS</a>
-            <a href="#fogonadua" class="mobile-link" @click="closeMobileMenu">FOGONADUA</a>
+            <a href="#fogonadua" class="mobile-link" @click="closeMobileMenu">SOCIOS</a>
             <a href="#notarization" class="mobile-link" @click="closeMobileMenu">NOTARIZACIÓN</a>
-            <a href="#resources" class="mobile-link" @click="closeMobileMenu">RECURSOS</a>
+
+            <div class="mobile-accordion-item">
+              <button type="button" class="mobile-link mobile-link--accordion" @click="toggleMobileResources">
+                RECURSOS
+                <span class="mobile-caret" :class="{ open: isMobileResourcesOpen }">▾</span>
+              </button>
+              <div class="mobile-submenu" :class="{ open: isMobileResourcesOpen }">
+                <a href="#resources" class="mobile-sublink" @click="closeMobileMenu">Blog y noticias</a>
+                <a href="#resources" class="mobile-sublink" @click="closeMobileMenu">Podcast</a>
+              </div>
+            </div>
           </div>
 
           <div class="mobile-controls">
@@ -49,6 +118,21 @@
             <button class="mobile-btn contact-btn" @click="handleContact; closeMobileMenu()">
               CONTACTO
             </button>
+          </div>
+
+          <div class="mobile-social">
+            <p class="mobile-social-label">Síguenos</p>
+            <div class="mobile-social-icons">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -60,9 +144,6 @@
 
   <!-- Clientes/Socios Section -->
   <ClientsSection />
-
-  <!-- Distinguish Section -->
-  <DistinguishSection />
 
   <!-- What Sets Us Apart Section -->
   <WhatSetsUsApart />
@@ -93,14 +174,13 @@
 </template>
 
 <script setup lang="ts">
-import { RouterLink, RouterView, useRoute } from 'vue-router';
+import { RouterLink, useRoute } from 'vue-router';
 import { authService } from '@/services/api';
-import { onMounted, ref, watch } from 'vue';
+import { onBeforeUnmount, onMounted, ref, watch } from 'vue';
 import router from './router';
 import MainBanner from '@/components/MainBanner.vue';
 import WhatsAppFloating from '@/components/WhatsAppFloating.vue';
 import ClientsSection from '@/components/ClientsSection.vue';
-import DistinguishSection from '@/components/DistinguishSection.vue';
 import WhatSetsUsApart from '@/components/WhatSetsUsApart.vue';
 import ServicesSection from '@/components/ServicesSection.vue';
 import IndustriesSection from '@/components/IndustriesSection.vue';
@@ -114,6 +194,9 @@ const isLoggedIn = ref(false);
 const username = ref('');
 const isMobileMenuOpen = ref(false);
 const showRulesModal = ref(false);
+const isNavbarTransparent = ref(true);
+const isMobileAboutOpen = ref(false);
+const isMobileResourcesOpen = ref(false);
 
 // Funciones para el menú hamburguesa
 const toggleMobileMenu = () => {
@@ -122,6 +205,14 @@ const toggleMobileMenu = () => {
 
 const closeMobileMenu = () => {
   isMobileMenuOpen.value = false;
+};
+
+const toggleMobileAbout = () => {
+  isMobileAboutOpen.value = !isMobileAboutOpen.value;
+};
+
+const toggleMobileResources = () => {
+  isMobileResourcesOpen.value = !isMobileResourcesOpen.value;
 };
 
 // Funciones para el modal de reglas
@@ -171,10 +262,8 @@ const checkAuthStatus = () => {
 // Función para ir a la sección de contacto
 const handleContact = () => {
   closeMobileMenu();
-  router.push({ name: 'contacto' }).catch(() => {
-    // Si no existe la ruta, hacer scroll a la sección
-    scrollToSection('#contact');
-  });
+  // Scroll directo a la sección de contacto presente en la landing
+  scrollToSection('#contact');
 };
 
 // Función para hacer scroll suave a una sección
@@ -190,8 +279,19 @@ const scrollToSection = (selector: string) => {
   }
 };
 
+const updateNavbarBackground = () => {
+  // Transparente solo cuando la página está totalmente arriba
+  isNavbarTransparent.value = window.scrollY <= 0;
+};
+
 onMounted(() => {
   checkAuthStatus();
+  updateNavbarBackground();
+  window.addEventListener('scroll', updateNavbarBackground, { passive: true });
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', updateNavbarBackground);
 });
 
 const route = useRoute();
@@ -202,7 +302,9 @@ watch(route, () => {
 
 <style scoped>
 .navbar {
-  background: #f5f5f5;
+  background: rgba(0, 0, 0, 0.72); /* gris oscuro al hacer scroll */
+  backdrop-filter: blur(15.3px);
+  -webkit-backdrop-filter: none;
   margin: 0;
   width: 100%;
   display: flex;
@@ -213,10 +315,19 @@ watch(route, () => {
   left: 0;
   z-index: 1000;
   height: auto;
-  padding: 12px clamp(20px, 5vw, 60px);
+  padding: 12px clamp(6px, 5vw, 10px);
   min-height: 75px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  border-bottom: 1px solid #4b4b4b;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.navbar.navbar--transparent {
+  background: transparent;
+  box-shadow: none;
+  border-bottom-color: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 
 .brand-container {
@@ -236,14 +347,14 @@ watch(route, () => {
 .logo-circle {
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, #EE2A31 0%, #001A70 100%);
+  background: linear-gradient(135deg, #be009f 0%, #001A70 100%);
   border-radius: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
-  border: 2px solid #EE2A31;
+  border: 2px solid #be009f;
   box-shadow: none;
   transition: all 0.3s ease;
 }
@@ -252,7 +363,7 @@ watch(route, () => {
   content: '';
   position: absolute;
   inset: -3px;
-  background: linear-gradient(135deg, #EE2A31 0%, #001A70 100%);
+  background: linear-gradient(135deg, #be009f 0%, #001A70 100%);
   border-radius: 20%;
   z-index: 0;
 }
@@ -261,7 +372,7 @@ watch(route, () => {
   content: '';
   position: absolute;
   inset: 3px;
-  background: linear-gradient(135deg, rgba(238, 42, 49, 0.95) 0%, rgba(0, 26, 112, 0.95) 100%);
+  background: #be009f;
   border-radius: 15%;
   z-index: 1;
 }
@@ -335,11 +446,11 @@ watch(route, () => {
 
 .brand-title {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1;
   margin: 0;
   letter-spacing: 0.5px;
-  color: #000000;
+  color: #ffffff;
   white-space: nowrap;
 }
 
@@ -354,8 +465,7 @@ watch(route, () => {
 
 .brand-tagline {
   font-size: 10px;
-  color: #666666;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin: 0;
@@ -363,8 +473,8 @@ watch(route, () => {
 
 .brand-subtitle {
   font-size: 10px;
-  color: #999999;
-  font-weight: 400;
+  color: #e5e7eb;
+  font-weight: 600;
   line-height: 1.2;
   margin: 0;
 }
@@ -373,23 +483,50 @@ watch(route, () => {
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 8px;
   margin: 0;
   flex: 1;
   justify-content: center;
 }
 
+.nav-item {
+  position: relative;
+}
+
 .nav-link {
-  color: #333333;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 400;
   font-size: 14px;
-  padding: 8px 12px;
-  border-radius: 0;
+  padding: 10px 14px;
+  border-radius: 9999px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
-  letter-spacing: 0;
+  letter-spacing: 0.3px;
   white-space: nowrap;
+}
+
+.nav-link--dropdown {
+  border: none;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.nav-caret {
+  font-size: 10px;
+}
+
+.navbar.navbar--transparent .nav-link {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.navbar.navbar--transparent .nav-link:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 .nav-link::after {
@@ -400,13 +537,13 @@ watch(route, () => {
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background: #EE2A31;
+  background: #ffffff;
   transition: width 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #EE2A31;
-  background-color: rgba(238, 42, 49, 0.05);
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.06);
   transform: translateY(-2px);
 }
 
@@ -415,12 +552,49 @@ watch(route, () => {
 }
 
 .nav-link.active {
-  color: var(--primary-red);
-  background: rgba(220, 38, 38, 0.15);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.14);
+  font-weight: 600;
 }
 
 .nav-link.active::after {
   width: 70%;
+}
+
+.nav-item--dropdown .dropdown-menu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  min-width: 220px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.35);
+  padding: 10px 0;
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  z-index: 1200;
+}
+
+.nav-item--dropdown:hover .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdown-link {
+  display: block;
+  padding: 8px 18px;
+  font-size: 13px;
+  color: #111827;
+  text-decoration: none;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.dropdown-link:hover {
+  background: #f3f4f6;
 }
 
 .share-btn {
@@ -445,23 +619,6 @@ watch(route, () => {
   flex-shrink: 0;
 }
 
-.btn {
-  padding: 8px 18px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 13px;
-  transition: all 0.3s ease;
-  border: none;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
-}
-
 .access-btn {
   background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 100%);
   color: #ffffff;
@@ -480,8 +637,7 @@ watch(route, () => {
   color: #ffffff;
   box-shadow: 0 2px 8px rgba(0, 26, 112, 0.2);
   font-weight: 600;
-  padding: 10px 22px;
-  border-radius: 6px;
+  padding: 10px 12px;
   font-size: 14px;
   text-transform: none;
   display: flex;
@@ -502,12 +658,11 @@ watch(route, () => {
 }
 
 .main-page-btn {
-  background: linear-gradient(135deg, #EE2A31 0%, #D32F2F 100%);
+
   color: #ffffff;
-  box-shadow: 0 2px 8px rgba(238, 42, 49, 0.2);
-  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(190, 0, 159, 0.25);
+  font-weight: 400;
   padding: 10px 22px;
-  border-radius: 6px;
   font-size: 14px;
   text-decoration: none;
   display: flex;
@@ -517,14 +672,12 @@ watch(route, () => {
 }
 
 .main-page-btn:hover {
-  background: linear-gradient(135deg, #D32F2F 0%, #B71C1C 100%);
-  box-shadow: 0 4px 12px rgba(238, 42, 49, 0.3);
+  background: #be009f;
   transform: translateY(-2px);
 }
 
 .logout-btn {
   background: rgba(248, 113, 113, 0.1);
-  color: #f87171;
   border: 1px solid rgba(248, 113, 113, 0.3);
 }
 
@@ -592,7 +745,7 @@ watch(route, () => {
   display: block;
   height: 3px;
   width: 100%;
-  background-color: #333333;
+  background-color: #f9fafb;
   border-radius: 3px;
   transition: all 0.3s ease;
 }
@@ -617,7 +770,7 @@ watch(route, () => {
   left: 0;
   width: 100%;
   height: calc(100vh - 75px);
-  background: #ffffff;
+  background: #161616;
   transform: translateX(-100%);
   transition: transform 0.3s ease;
   z-index: 999;
@@ -639,26 +792,92 @@ watch(route, () => {
 .mobile-nav-links {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 0;
+}
+
+.mobile-nav-links > * {
+  border-top: 1px solid rgba(255, 255, 255, 0.28);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.mobile-nav-links > *:first-child {
+  border-top: none;
+}
+
+.mobile-nav-links > *:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.mobile-accordion-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .mobile-link {
-  color: #333333;
+  color: #ffffff;
   text-decoration: none;
-  padding: 15px 20px;
+  padding: 14px 20px;
   font-size: 16px;
-  font-weight: 500;
-  border-radius: 8px;
+  font-weight: 700;
+  border-radius: 9999px;
   transition: all 0.3s ease;
-  text-align: center;
-  background: rgba(238, 42, 49, 0.05);
-  border: 1px solid rgba(238, 42, 49, 0.1);
+  text-align: left;
+  background: transparent;
+  border: none;
+}
+
+.mobile-link--accordion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mobile-caret {
+  font-size: 12px;
+  transition: transform 0.2s ease;
+}
+
+.mobile-caret.open {
+  transform: rotate(180deg);
 }
 
 .mobile-link:hover {
-  background: rgba(238, 42, 49, 0.1);
-  color: #EE2A31;
-  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.mobile-submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease;
+  padding-left: 10px;
+}
+
+.mobile-submenu.open {
+  max-height: 500px;
+}
+
+.mobile-sublink {
+  display: block;
+  padding: 8px 18px;
+  font-size: 14px;
+  color: #e5e7eb;
+  text-decoration: none;
+  border-radius: 9999px;
+}
+
+.mobile-sublink + .mobile-sublink {
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+  margin-top: 4px;
+  padding-top: 8px;
+}
+
+.mobile-sublink:hover {
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .mobile-controls {
@@ -666,7 +885,7 @@ watch(route, () => {
   flex-direction: column;
   gap: 15px;
   padding-top: 20px;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid rgba(255, 255, 255, 0.28);
 }
 
 .mobile-btn {
@@ -708,13 +927,13 @@ watch(route, () => {
 }
 
 .mobile-btn.main-page-btn {
-  background: linear-gradient(135deg, #EE2A31 0%, #D32F2F 100%);
+  background: #be009f;
   color: #ffffff;
   box-shadow: 0 2px 8px rgba(238, 42, 49, 0.2);
 }
 
 .mobile-btn.main-page-btn:active {
-  background: linear-gradient(135deg, #D32F2F 0%, #B71C1C 100%);
+  background: #be009f;
   box-shadow: 0 4px 12px rgba(238, 42, 49, 0.3);
   transform: translateY(-2px);
 }
@@ -728,6 +947,34 @@ watch(route, () => {
   background: rgba(238, 42, 49, 0.05);
   border-radius: 8px;
   border: 1px solid rgba(238, 42, 49, 0.1);
+}
+
+.mobile-social {
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.mobile-social-label {
+  font-size: 13px;
+  color: #e5e7eb;
+  margin: 0 0 10px 0;
+}
+
+.mobile-social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.mobile-social-icons a {
+  color: #f9fafb;
+  font-size: 18px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.mobile-social-icons a:hover {
+  color: #be009f;
+  transform: translateY(-1px);
 }
 
 /* Responsive */
@@ -750,13 +997,13 @@ watch(route, () => {
   }
 
   .brand-title {
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 0.5px;
   }
 
   .brand-logo {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 8.8rem;
+    height: 4.8rem;
   }
 
   .brand-subtitle {
@@ -794,13 +1041,13 @@ watch(route, () => {
   }
 
   .brand-title {
-    font-size: 14px;
+    font-size: 17px;
     letter-spacing: 0.3px;
   }
 
   .brand-logo {
-    width: 3rem;
-    height: 3rem;
+    width: 8.4rem;
+    height: 4.4rem;
   }
 
   .brand-subtitle {
@@ -829,70 +1076,7 @@ watch(route, () => {
 }
 
 /* Estilos para enlaces activos */
-.nav-link.active,
-.mobile-link.active {
-  color: #0071e3;
-  font-weight: 600;
-  position: relative;
-}
-
-.nav-link.active::after,
-.mobile-link.active::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #0071e3;
-  border-radius: 2px;
-  animation: fadeIn 0.3s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scaleX(0.5);
-  }
-  to {
-    opacity: 1;
-    transform: scaleX(1);
-  }
-}
-
 .link-navbar:hover {
   text-decoration: none !important;
-}
-
-/* Estilos para enlaces activos */
-.nav-link.active,
-.mobile-link.active {
-  color: #0071e3;
-  font-weight: 600;
-  position: relative;
-}
-
-.nav-link.active::after,
-.mobile-link.active::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #0071e3;
-  border-radius: 2px;
-  animation: fadeIn 0.3s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scaleX(0.5);
-  }
-  to {
-    opacity: 1;
-    transform: scaleX(1);
-  }
 }
 </style>

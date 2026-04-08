@@ -185,6 +185,8 @@
   font-weight: var(--font-weight-extrabold);
   color: var(--brand-secondary-red, #EE2A31);  /* Rojo CCI */
   margin-bottom: 10px;
+  /* Forzar números limpios sin marca de agua */
+  font-family: var(--font-secondary);
 }
 
 .stat-label {
