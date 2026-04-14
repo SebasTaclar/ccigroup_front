@@ -46,16 +46,10 @@
         </div>
       </div>
 
-      <!-- Botón de contacto y página principal -->
+      <!-- Botón de contacto y página principal
       <div class="nav-controls desktop-nav">
-        <a
-          href="https://a7oqb2wb89ps4x.projectwebtec9.com/"
-          target="_blank"
-          rel="noopener"
-          class="btn main-page-btn"
-        >IR A PÁGINA<br>PRINCIPAL</a>
         <button class="btn contact-btn" @click="handleContact">CONTÁCTANOS <span class="arrow">›</span></button>
-      </div>
+      </div> -->
 
       <!-- Menu hamburguesa para mobile -->
       <button
@@ -113,12 +107,12 @@
             </div>
           </div>
 
-          <div class="mobile-controls">
+          <!-- <div class="mobile-controls">
             <a href="https://a7oqb2wb89ps4x.projectwebtec9.com/" target="_blank" rel="noopener" class="mobile-btn main-page-btn" @click="closeMobileMenu">PÁGINA PRINCIPAL</a>
             <button class="mobile-btn contact-btn" @click="handleContact; closeMobileMenu()">
               CONTACTO
             </button>
-          </div>
+          </div> -->
 
           <div class="mobile-social">
             <p class="mobile-social-label">Síguenos</p>
@@ -141,18 +135,21 @@
 
   <!-- Main Banner -->
   <MainBanner @showRules="openRulesModal" />
+  <TrustSection />
+  <WhoWeAre />
+  <ValueSection />
 
   <!-- Clientes/Socios Section -->
   <ClientsSection />
 
-  <!-- What Sets Us Apart Section -->
-  <WhatSetsUsApart />
+  <!-- What Sets Us Apart Section (temporalmente oculto) -->
 
   <!-- Core Services Section -->
   <ServicesSection />
 
   <!-- Industries Section -->
   <IndustriesSection />
+  <WhyChoose />
 
   <!-- Process Section -->
   <ProcessSection />
@@ -160,8 +157,9 @@
   <!-- Testimonials Section -->
   <TestimonialsSection />
 
-  <!-- Resources and Blog Section -->
-  <ResourcesSection />
+  <!-- Resources and Blog Section (temporalmente reemplazado por BusinessSolutionsSection) -->
+  <BusinessSolutionsSection />
+  <ClosingSection />
 
   <!-- Botón flotante de WhatsApp -->
   <WhatsAppFloating />
@@ -177,16 +175,19 @@
 import { RouterLink, useRoute } from 'vue-router';
 import { authService } from '@/services/api';
 import { onBeforeUnmount, onMounted, ref, watch } from 'vue';
+import ValueSection from '@/components/ValueSection.vue';
 import router from './router';
 import MainBanner from '@/components/MainBanner.vue';
+import TrustSection from '@/components/TrustSection.vue';
+import WhoWeAre from '@/components/WhoWeAre.vue';
+import WhyChoose from '@/components/WhyChoose.vue';
 import WhatsAppFloating from '@/components/WhatsAppFloating.vue';
-import ClientsSection from '@/components/ClientsSection.vue';
-import WhatSetsUsApart from '@/components/WhatSetsUsApart.vue';
 import ServicesSection from '@/components/ServicesSection.vue';
 import IndustriesSection from '@/components/IndustriesSection.vue';
 import ProcessSection from '@/components/ProcessSection.vue';
 import TestimonialsSection from '@/components/TestimonialsSection.vue';
-import ResourcesSection from '@/components/ResourcesSection.vue';
+import BusinessSolutionsSection from '@/components/BusinessSolutionsSection.vue';
+import ClosingSection from '@/components/ClosingSection.vue';
 import ContactSection from '@/components/ContactSection.vue';
 import Footer_ from '@/components/Footer_.vue';
 

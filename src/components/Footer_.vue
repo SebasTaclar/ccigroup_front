@@ -6,9 +6,9 @@
         <div class="footer-grid">
           <!-- Columna 1: Marca -->
           <div class="footer-col brand-col">
-            <img src="/images/logo.png" alt="CCI Group Logo" class="footer-logo">
+            <img src="/images/logo.png" alt="Glóbika Logo" class="footer-logo">
             <p class="footer-brand-desc">
-              CCI Group ofrece soluciones lingüísticas innovadoras que permiten el éxito de las organizaciones en un mundo globalizado.
+              Glóbika ofrece soluciones lingüísticas innovadoras que permiten el éxito de las organizaciones en un mundo globalizado.
             </p>
           </div>
 
@@ -75,7 +75,7 @@
             </div>
             <div class="contact-details">
               <h5>Teléfono</h5>
-              <p>(727) 657-3167</p>
+              <p>+57 300 463 7378</p>
             </div>
           </div>
 
@@ -89,7 +89,7 @@
             </div>
             <div class="contact-details">
               <h5>Email</h5>
-              <p>info@myccigroup.com</p>
+              <p>info@globika.com <br>info@myccigroup.com</p>
             </div>
           </div>
 
@@ -103,7 +103,7 @@
             </div>
             <div class="contact-details">
               <h5>Ubicación</h5>
-              <p>618 E South St, Orlando, FL 32801</p>
+              <p>San Fernando Plaza. Torre I - Oficina # 652 | Medellin, Antioquia</p>
             </div>
           </div>
         </div>
@@ -412,12 +412,22 @@
   }
 
   .social-icons {
-    gap: 12px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
   }
 
   .social-icon {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
   }
+}
+
+@media (max-width: 480px) {
+  .social-icons { gap: 8px; }
+  .social-icon { width: 32px; height: 32px; }
+  .social-icon svg { width: 18px; height: 18px; }
 }
 </style>

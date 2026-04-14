@@ -4,7 +4,7 @@
     class="whatsapp-floating"
     target="_blank"
     rel="noopener"
-    aria-label="Chatear por WhatsApp con CCI Group"
+    aria-label="Chatear por WhatsApp con Globika"
   >
     <img
       src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
@@ -16,10 +16,10 @@
 
 <script setup lang="ts">
 // Número de WhatsApp en formato internacional (sin '+')
-const whatsappNumber = '17276573167'
+const whatsappNumber = '3004637378' // Reemplaza con el número real de WhatsApp de Globika
 
 // Mensaje por defecto para iniciar la conversación
-const defaultMessage = 'Hola! Me interesa un servicio de CCI Group. ¿Me pueden brindar más información?'
+const defaultMessage = 'Hola! Me interesa un servicio de Globika. ¿Me pueden brindar más información?'
 
 // Enlace usando la API oficial de WhatsApp
 const whatsappLink = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(defaultMessage)}`

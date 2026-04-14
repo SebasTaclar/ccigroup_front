@@ -5,17 +5,30 @@
         <!-- Formulario Izquierda -->
         <div class="form-column">
           <div class="form-card">
-            <h2 class="form-title">Ponte en contacto con<br>nosotros</h2>
-
+            <h2 class="form-title">Contáctanos</h2>
+            <p class="info-title">Cuéntanos qué servicio necesitas y te ayudaremos a encontrar la mejor solución.</p>
             <form @submit.prevent="submitForm" class="contact-form">
               <!-- Nombre Completo -->
               <div class="form-group">
-                <label for="name" class="form-label">Nombre completo</label>
+                <label for="name" class="form-label">Nombre</label>
                 <input
                   id="name"
                   v-model="formData.name"
                   type="text"
                   placeholder="Por ejemplo, John Doe"
+                  class="form-input"
+                  required
+                >
+              </div>
+
+              <!-- Nombre Completo -->
+              <div class="form-group">
+                <label for="name" class="form-label">Empresa / Entidad </label>
+                <input
+                  id="name"
+                  v-model="formData.name"
+                  type="text"
+                  placeholder="Por ejemplo, Acme Corp"
                   class="form-input"
                   required
                 >
@@ -40,7 +53,7 @@
                     id="phone"
                     v-model="formData.phone"
                     type="tel"
-                    placeholder="Por ejemplo, +1-912-345-678"
+                    placeholder="Por ejemplo, +57 123456789"
                     class="form-input"
                     required
                   >
@@ -62,32 +75,20 @@
 
               <!-- Botón Enviar -->
               <button type="submit" class="submit-button">
-                ENVIAR MENSAJE
+                ENVIAR SOLICITUD
               </button>
             </form>
           </div>
         </div>
 
-        <!-- Información Derecha -->
+        <!-- Información Derecha (ahora imagen) -->
         <div class="info-column">
           <div class="info-content">
-            <h3 class="info-title">Déjanos un mensaje y<br>contacta con nosotros</h3>
-
-            <p class="info-description">
-              ¿Tienes alguna pregunta o estás listo para comenzar? <br>Déjanos un mensaje; ¡nos encantaría ponernos en <br>contacto contigo!
-            </p>
-
-            <!-- Rating -->
-            <div class="rating-section">
-              <div class="stars">
-                <span
-                  v-for="star in 5"
-                  :key="star"
-                  class="star filled"
-                >★</span>
-              </div>
-              <p class="rating-text">4.9 de 5 estrellas según 47 reseñas.</p>
-            </div>
+            <img
+              src="https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/03/pexels-karola-g-5904094-1024x682.webp"
+              alt="Contacto"
+              class="contact-side-image"
+            />
           </div>
         </div>
       </div>
@@ -163,7 +164,7 @@ const submitForm = async () => {
 }
 
 .form-title {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 400;
   color: #282828;
   margin: 0 0 30px 0;
@@ -192,7 +193,7 @@ const submitForm = async () => {
 .form-label {
   font-size: 14px;
   font-weight: 600;
-  color: #1f2937;
+  color: #787878;
   text-transform: capitalize;
 }
 
@@ -201,7 +202,7 @@ const submitForm = async () => {
   padding: 12px 14px;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 13px;
   font-family: inherit;
   transition: all 0.3s ease;
   color: #1f2937;
@@ -264,13 +265,22 @@ const submitForm = async () => {
   gap: 24px;
 }
 
+.contact-side-image {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  max-height: 480px;
+  display: block;
+}
+
 .info-title {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
-  color: #282828;
+  color: #787878;
   margin: 0;
   line-height: 1.3;
   letter-spacing: -0.5px;
+  margin-bottom: 10PX;
 }
 
 .info-description {
@@ -365,11 +375,12 @@ const submitForm = async () => {
   }
 
   .form-title {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .info-title {
-    font-size: 20px;
+    font-size: 16px;
+    text-align: left;
   }
 
   .info-description {
@@ -379,7 +390,23 @@ const submitForm = async () => {
   .submit-button {
     padding: 12px 25px;
     font-size: 12px;
+    width: 100%;
   }
+
+  .contact-side-image {
+    max-height: 200px;
+    border-radius: 10px;
+  }
+
+.form-label {
+  font-size: 15px;
+
+}
+
+.submit-button{
+  font-size: 15px;
+}
+
 }
 </style>
 
