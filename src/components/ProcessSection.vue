@@ -4,8 +4,7 @@
       <div class="process-hero">
         <div class="process-copy">
           <h2 class="process-title">
-            Desde la solicitud hasta el resultado<span class="rating-number">:</span> Rápido<span class="rating-number">,</span>
-            preciso y conforme a la normativa
+            Cómo trabajamos
           </h2>
           <p class="process-text">
             Un proceso optimizado diseñado para llevarle desde la solicitud hasta la entrega,
@@ -18,7 +17,7 @@
 
         <div class="process-image-wrapper">
           <img
-            src="https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/03/pexels-karola-g-5904094-1024x682.webp"
+            src="https://thespanishgroup.org/traducciones/wp-content/uploads/2020/07/certified-translation-service-the-spanish-group-2-scaled.jpg"
             alt="Cliente hablando por telÉfono con un intÉrprete"
             class="process-image"
           />
@@ -45,20 +44,20 @@ defineOptions({ name: 'ProcessSection' })
 
 const steps = ref([
   {
-    title: 'Envía su solicitud',
-    description: 'Envíenos sus documentos o detalles del evento a través de nuestra plataforma segura.'
+    title: 'Entendemos tu necesidad',
+    description: 'Escuchamos el contexto, el tipo de servicio requerido, los tiempos y el objetivo del proceso.'
   },
   {
-    title: 'Encuentra a los expertos que te necesitan',
-    description: 'Te ponemos en contacto con lingüistas e intérpretes certificados que se ajustan a tus necesidades específicas.'
+    title: 'Diseñamos la solución adecuada',
+    description: 'Definimos el servicio, el formato de atención y el alcance más conveniente.'
   },
   {
-    title: 'Reciba su solución',
-    description: 'Traducciones, interpretaciones o legalizaciones notariales entregadas con rapidez y precisión.'
+    title: 'Ejecutamos con acompañamiento',
+    description: 'Coordinamos el servicio con enfoque profesional, calidad y seguimiento.'
   },
   {
-    title: 'Revisar y confirmar',
-    description: 'Garantizamos que todo cumple con sus estándares gracias a nuestro proceso de control de calidad.'
+    title: 'Construimos relaciones de largo plazo',
+    description: 'Buscamos convertirnos en un aliado confiable para tus necesidades lingüísticas en Colombia.'
   }
 ])
 </script>
@@ -101,10 +100,11 @@ const steps = ref([
 }
 
 .process-text {
-  font-size: 16px;
-  color: var(--medium-gray);
+  font-size: 18px;
+  color: #757575;
   line-height: 1.7;
-  margin: 0 0 28px 0;
+  margin: 0 130px 28px 0;
+  text-align: justify;
 }
 
 .process-cta-button {
@@ -239,6 +239,15 @@ const steps = ref([
     width: 56px;
     height: 56px;
     font-size: 18px;
+  }
+
+  .process-title {
+    font-size: clamp(24px, 5vw, 24px);
+  }
+
+  .process-text {
+    font-size: 16px;
+    margin: 0 0 28px 0;
   }
 }
 </style>

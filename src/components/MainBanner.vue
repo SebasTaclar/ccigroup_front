@@ -10,33 +10,36 @@
     </div>
 
     <div class="banner-content">
-      <h1 class="banner-title">Soluciones lingüísticas innovadoras</h1>
-      <p class="banner-subtitle">Comunicación humana que conecta al mundo</p>
+      <h1 class="banner-title">Soluciones lingüísticas integrales para Colombia</h1>
+      <p class="banner-subtitle">Interpretación<span class="rating-simbolos">,</span>traducción<span class="rating-simbolos">,</span> notarización y apoyo multilingüe para empresas<span class="rating-simbolos">,</span> entidades<span class="rating-simbolos">,</span> instituciones y personas que necesitan comunicarse con claridad<span class="rating-simbolos">,</span> precisión y confianza<span class="rating-simbolos">.</span></p>
 
       <p class="banner-description">
-        CCI Group transforma los desafíos en la comunicación en conexiones humanas. Brindamos servicios a múltiples sectores: gobierno, salud,
-        educación y otras industrias, y contamos con experiencia certificada en más de 350 idiomas. Desde interpretación en tiempo real hasta
-        notarización remota y gestión de talento, eliminamos las barreras lingüísticas para impulsar la conexión, la comunicación y el éxito
-        de su organización.
+        Glóbika hace parte de CCI Group, organización con experiencia internacional en servicios lingüísticos y soluciones de comunicación multicultural. Hoy llegamos a Colombia para poner esa capacidad al servicio del mercado local, con una propuesta adaptada a las necesidades del país.
       </p>
 
       <div class="banner-buttons">
-        <button class="btn hero-primary" @click="handleCTA">
-          PROGRAME UNA LLAMADA ESTRATÉGICA <span class="arrow">→</span>
+        <button class="btn contact-btn hero-primary" @click="handleCTA">
+          Solicitar cotización<span class="arrow"></span>
         </button>
-        <button class="btn hero-secondary" @click="exploreSolutions">
-          EXPLORE NUESTRAS SOLUCIONES
+        <button class="btn contact-btn hero-secondary" @click="exploreSolutions">
+          Conocer nuestros servicios
         </button>
+        <a
+          href="https://a7oqb2wb89ps4x.projectwebtec9.com/"
+          target="_blank"
+          rel="noopener"
+          class="btn contact-btn"
+        >Mas sobre CCI Group</a>
       </div>
 
-      <p class="banner-rating">
+      <!-- <p class="banner-rating">
         <span class="stars">★★★★★</span>
         <span class="rating-text">
           Lo que dicen nuestros clientes<span class="rating-number">: 4,9</span> de<span class="rating-number"> 5</span> estrellas según
           <span class="rating-number">47</span> reseñas<span class="rating-number">.</span>
           Valoración media<span class="rating-number">: 4,7</span> de <span class="rating-number"> 5</span>
         </span>
-      </p>
+      </p> -->
     </div>
   </section>
 </template>
@@ -54,7 +57,7 @@ const handleCTA = () => {
 }
 
 const exploreSolutions = () => {
-  const solutionsSection = document.querySelector('.distinguish-section')
+  const solutionsSection = document.querySelector('.services-section')
   if (solutionsSection) {
     solutionsSection.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
@@ -65,13 +68,12 @@ const exploreSolutions = () => {
 .main-banner {
   position: relative;
   width: 100%;
-  height: 100vh;
-  min-height: 850px;
+  height: 250px;
+  min-height: 115vh;
   margin-top: 0;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  overflow: hidden;
   padding-top: 60px;
 }
 
@@ -108,7 +110,7 @@ const exploreSolutions = () => {
   z-index: 3;
   max-width: 1000px;
   padding-left: 60px;
-  padding-top: 140px;
+  padding-top: 120px;
   padding-right: 50px;
   color: #ffffff;
   display: flex;
@@ -184,14 +186,19 @@ const exploreSolutions = () => {
   font-size: 22px;
 }
 
+.rating-simbolos{
+  font-size: 22px;
+  font-weight: 600;
+  font-family: var(--font-secondary);
+}
+
 .banner-buttons {
   display: flex;
   gap: 12px;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 16px;
-  max-width: 620px;
+  width: 100%;
 }
 
 .btn {
@@ -256,9 +263,15 @@ const exploreSolutions = () => {
   transform: translateY(-1px);
 }
 @media (max-width: 768px) {
+  .main-banner {
+    min-height: 65vh;
+    padding-top: 20px;
+    align-items: center;
+  }
   .banner-content {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 40px;
     gap: 20px;
   }
 
@@ -281,30 +294,58 @@ const exploreSolutions = () => {
 
 @media (max-width: 480px) {
   .main-banner {
-    min-height: 520px;
+    min-height: 130vh;
+    padding-top: 10px;
+    align-items: center;
   }
 
   .banner-content {
-    padding: 80px clamp(15px, 5vw, 30px);
+    padding: 48px clamp(15px, 5vw, 30px);
     gap: 18px;
   }
 
   .banner-title {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .banner-subtitle {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .banner-description {
     font-size: 15px;
-    line-height: 1.6;
+    line-height: 1.5;
+    max-width: none;
   }
 
   .btn {
     padding: 10px 20px;
     font-size: 12px;
   }
+}
+/* Copiado desde App.vue para mantener la apariencia del navbar */
+.contact-btn {
+  background: #be009f;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 26, 112, 0.2);
+  font-weight: 600;
+  padding: 10px 12px;
+  font-size: 14px;
+  text-transform: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.contact-btn .arrow {
+  font-size: 18px;
+  font-weight: 300;
+  margin-left: 2px;
+}
+
+.contact-btn:hover {
+  background: #be009f;
+  box-shadow: 0 4px 12px rgba(0, 26, 112, 0.3);
+  transform: translateY(-2px);
 }
 </style>

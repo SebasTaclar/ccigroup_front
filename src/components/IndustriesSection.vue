@@ -4,9 +4,9 @@
       <div class="industries-layout">
         <div class="copy-column">
 
-          <h2 class="section-title">Brindamos servicios a aquellos sectores en los que la precisión es clave</h2>
+          <h2 class="section-title">Sectores que atendemos</h2>
           <p class="section-subtitle">
-            Ya sea en agencias federales como FEMA y USAID, o en el ámbito universitario y hospitalario, personalizamos nuestros servicios según su entorno operativo, normativas de cumplimiento y necesidades culturales.
+            Nuestros servicios pueden adaptarse a diferentes industrias y entornos donde la comunicación clara y profesional es fundamental.
           </p>
 
           <div class="industries-lists">
@@ -18,10 +18,14 @@
             </ul>
           </div>
 
-          <button class="view-all-btn" type="button">
+          <p class="section-subtitle1">
+            Cada sector tiene su propio lenguaje, sensibilidad y nivel de exigencia. Por eso trabajamos cada servicio con criterio profesional, preparación y adaptación al contexto.
+          </p>
+
+          <!-- <button class="view-all-btn" type="button">
             <span>Vea todas las industrias</span>
             <i class="fas fa-arrow-right"></i>
-          </button>
+          </button> -->
         </div>
 
         <div class="image-column">
@@ -44,14 +48,14 @@ import { computed, ref } from 'vue'
 defineOptions({ name: 'IndustriesSection' })
 
 const industries = ref<string[]>([
-  'Gobierno',
+  'Legal e institucional ',
   'Salud',
-  'Educación',
-  'Legal y judicial',
   'Corporativo y empresarial',
-  'Tecnología y SaaS',
-  'ONG y organizaciones sin fines de lucro',
-  'Medios y eventos'
+  'Educación',
+  'Eventos y conferencias',
+  'Servicios al ciudadano',
+  'Comercio internacional',
+  'Procesos administrativos y documentales'
 ])
 
 const industryColumns = computed(() => {
@@ -104,11 +108,21 @@ const industryColumns = computed(() => {
 }
 
 .section-subtitle {
-  font-size: 16px;
-  color: #020617;
+  font-size: 18px;
+  color: #757575;
   margin: 0 0 28px 0;
   max-width: 620px;
   line-height: 1.8;
+  font-weight: 400;
+}
+
+.section-subtitle1 {
+  font-size: 16px;
+  color: #757575;
+  margin: 0 0 28px 0;
+  max-width: 620px;
+  line-height: 1.8;
+  font-weight: 400;
 }
 
 .industries-lists {
@@ -209,5 +223,15 @@ const industryColumns = computed(() => {
   .industries-image-wrapper {
     max-width: 100%;
   }
+
+  .section-title {
+    font-size: clamp(24px, 5vw, 24px);
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+    text-align: justify;
+  }
+
 }
 </style>

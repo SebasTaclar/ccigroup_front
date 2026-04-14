@@ -3,9 +3,9 @@
     <div class="overlay"></div>
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Servicios esenciales que impulsan <br>la comunicación global</h2>
+        <h2 class="section-title">Nuestros servicios</h2>
         <p class="section-subtitle">
-          A través de nuestros intérpretes certificados, expertos en localización y notarios profesionales, diseñamos servicios para satisfacer sus necesidades lingüísticas urgentes y de alto impacto, bajo sus términos y en su idioma.
+          Diseñamos soluciones lingüísticas para diferentes necesidades, sectores y niveles de complejidad.
         </p>
       </div>
 
@@ -61,47 +61,50 @@ interface Service {
 const services = ref<Service[]>([
   {
     icon: 'fas fa-headset',
-    title: 'Servicios de interpretación',
-    description: 'Servicios de interpretación sin barreras, rápidos, flexibles y profesionales, disponibles de manera presencial, remota (video) o telefónica. Servicios garantizados 24/7 y en más de 350 idiomas.',
+    title: 'Interpretación',
+    description: 'Facilitamos la comunicación oral en tiempo real entre personas que hablan diferentes idiomas, con apoyo profesional y precisión contextual.',
     image: 'https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/03/66a50b29ea3a0bbf1698715c_Solutions_InPersonInterpreting.jpg',
-    features: []
+    features: ['Reuniones corporativas', 'Capacitaciones', 'Entrevistas', 'Audiencias y diligencias', 'Consultas médicas', 'Acompañamiento institucional', 'Eventos y conferencias']
   },
   {
     icon: 'fas fa-file-alt',
-    title: 'Servicios de\ntraducción',
-    description: 'Precisión en todo tipo de documentos, industrias y plataformas. Traducciones certificadas, técnicas y creativas, impulsadas por lingüistas expertos y procesos optimizados con IA.',
+    title: 'Traducción',
+    description: 'Traducimos documentos con enfoque profesional, cuidando el sentido, la terminología y la intención del contenido original.',
     image:
-      'https://globus.com.py/blog/wp-content/uploads/2022/12/servicio-de-traduccion-o-interpretacion.png',
-    features: []},
-  {
-    icon: 'fas fa-users',
-    title: 'Soluciones de gestión de talento global',
-    description: ' Selección de personal multilingüe y multicultural para todas las industrias. Contratación flexible (presencial o remota) de profesionales con fluidez cultural: desde intérpretes hasta personal administrativo, tecnológico y más.',
-    image:
-      'https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/03/66a50b2985f716cda4bbfe35_Solutions_cultural-awareness.jpg',
-    features: []},
-  {
-    icon: 'fas fa-sign-language',
-    title: 'Lengua de señas y accesibilidad',
-    description: 'Inclusión total para la comunidad sorda y con discapacidad auditiva. Ofrecemos interpretación en ASL (presencial y remota), subtitulado en tiempo real y asesoría normativa, garantizando experiencias accesibles y en pleno cumplimiento de la ley ADA para cada cliente.',
-    image:
-      'https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/03/66a50b29f2a7150c88006e39_Solutions-508-Compliance_upscayl_3x_upscayl-standard-4x-1024x768.webp',
-    features: []},
-  {
-    icon: 'fas fa-certificate',
-    title: 'Notarización remota y apostilla',
-    description: 'Soporte notarial multilingüe y autenticación segura desde cualquier lugar del mundo. Validación de documentos legales en el extranjero disponible 24/7.',
-    image: 'https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/03/33395-1024x683.webp',
-    features: []
+      'https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/03/edited_photo_v2-1536x1147.jpg',
+    features: ['Documentos corporativos', 'Contratos y documentos legales', 'Contenido institucional', 'Material comercial', 'Documentación técnica', 'Certificados y documentos personales', 'Contenido académico y administrativo']
   },
   {
-    icon: 'fas fa-globe-americas',
-    title: 'Servicios de localización y multimedia',
-    description: 'Adaptamos contenido, diseño y experiencia de usuario (UX) para cualquier mercado global. Localización de sitios web, aplicaciones, software y metadatos, además de SEO multilingüe y pruebas de adecuación cultural.',
+    icon: 'fas fa-certificate',
+    title: 'Notarización',
+    description: 'Apoyamos procesos documentales que requieren formalidad y respaldo en la presentación de información para trámites y gestiones específicas.',
+    image: 'https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/03/33395-1024x683.webp',
+    features: ['Nuestro equipo orienta al cliente durante el proceso para asegurar claridad, orden documental y cumplimiento de los requerimientos aplicables']
+  },
+  {
+    icon: 'fas fa-users',
+    title: 'Soluciones multilingües para empresas',
+    description: 'Acompañamos organizaciones que necesitan operar, atender usuarios o relacionarse con públicos multilingües de manera consistente y profesional.',
     image:
-      'https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/03/pexels-mikhail-nilov-6592395-1024x682.webp',
-    features: []
-  }
+      'https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/03/66a50b2985f716cda4bbfe35_Solutions_cultural-awareness.jpg',
+    features: ['Soporte lingüístico para atención al cliente', 'Apoyo en procesos internos y operativos', 'Traducción de materiales corporativos', 'Interpretación para reuniones y visitas', 'Acompañamiento en expansión y relacionamiento internacional']},
+  {
+    icon: 'fas fa-sign-language',
+    title: 'Apoyo para eventos',
+    description: 'Brindamos soporte lingüístico para encuentros empresariales, institucionales, académicos y sectoriales donde se requiere comunicación fluida entre asistentes de distintos idiomas.',
+    image:
+      'https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/03/66a50b29f2a7150c88006e39_Solutions-508-Compliance_upscayl_3x_upscayl-standard-4x-1024x768.webp',
+    features: ['Interpretación para conferencias y paneles', 'Apoyo para invitados internacionales', 'Coordinación lingüística del evento', 'Soluciones para formatos presenciales e híbridos']
+},
+
+  // {
+  //   icon: 'fas fa-globe-americas',
+  //   title: 'Servicios de localización y multimedia',
+  //   description: 'Adaptamos contenido, diseño y experiencia de usuario (UX) para cualquier mercado global. Localización de sitios web, aplicaciones, software y metadatos, además de SEO multilingüe y pruebas de adecuación cultural.',
+  //   image:
+  //     'https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/03/pexels-mikhail-nilov-6592395-1024x682.webp',
+  //   features: []
+  // }
 ])
 
 const CARDS_PER_VIEW = ref(3)
@@ -250,7 +253,7 @@ const scrollToContact = () => {
 }
 
 .service-content {
-  padding: 28px 25px 0;
+  padding: 28px 14px 0;
   display: flex;
   flex-direction: column;
   height: 70%;
@@ -289,7 +292,7 @@ const scrollToContact = () => {
 }
 
 .service-features i {
-  color: var(--primary-red);
+  color: #be009f;
   font-size: 12px;
 }
 
@@ -354,9 +357,9 @@ const scrollToContact = () => {
 }
 
 .carousel-arrow:hover {
-  background: rgba(37, 99, 235, 0.98);
+  background: #be009f;
   transform: translateY(-50%) scale(1.04);
-  box-shadow: 0 18px 42px rgba(37, 99, 235, 0.8);
+  box-shadow: #be009f;
 }
 
 @media (max-width: 1024px) {
@@ -370,8 +373,28 @@ const scrollToContact = () => {
     padding: 60px clamp(16px, 4vw, 40px);
   }
 
+  .section-title {
+    font-size: clamp(24px, 5vw, 24px);
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+
+  .service-description {
+    font-size: 15px;
+  }
+
+  .service-features li{
+    font-size: 14px;
+  }
+
   .section-header {
     margin-bottom: 40px;
+  }
+
+  .services-track {
+    gap: 0;
   }
 
   .service-card {
@@ -383,11 +406,13 @@ const scrollToContact = () => {
   }
 
   .carousel-arrow.left {
-    left: 4px;
+    left: 1px;
+    top: 220px;
   }
 
   .carousel-arrow.right {
-    right: 4px;
+    right: 1px;
+    top: 220px;
   }
 }
 </style>
