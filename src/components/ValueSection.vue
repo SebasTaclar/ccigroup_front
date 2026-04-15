@@ -36,7 +36,7 @@ defineOptions({ name: 'ValueSection' })
 }
 
 .value-title {
-  font-size: clamp(20px, 3.2vw, 28px);
+  font-size: clamp(20px, 3.2vw, 32px);
   font-weight: 400;
   margin: 0;
   color: #282828;

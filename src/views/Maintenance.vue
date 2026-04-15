@@ -27,16 +27,16 @@
 
       <!-- Título principal -->
       <h1 class="maintenance-title">
-        🔧 Sitio en <span class="highlight">Mantenimiento</span>
+        🔧 Glóbika en <span class="highlight">Mantenimiento</span>
       </h1>
 
       <!-- Descripción -->
       <div class="maintenance-description">
         <p class="main-message">
-          Estamos realizando mejoras importantes para brindarte una mejor experiencia.
+          Estamos actualizando las plataformas de Glóbika en Colombia para ofrecerte servicios lingüísticos y soluciones tecnológicas más rápidas y seguras.
         </p>
         <p class="sub-message">
-          Nuestro equipo está trabajando para que todo esté perfecto muy pronto.
+          Si necesitas soporte urgente, contáctanos por teléfono o WhatsApp; nuestro equipo estará encantado de ayudarte.
         </p>
       </div>
 
@@ -64,25 +64,26 @@
       </div> -->
 
       <!-- Información de contacto -->
-      <div class="contact-info">
+      <!-- <div class="contact-info">
         <div class="contact-card">
-          <div class="contact-icon">📞</div>
-          <div class="contact-content">
-            <div class="contact-label">¿Necesitas ayuda urgente?</div>
-            <a href="tel:+573118715539" class="contact-link">
-              Tel: +57 311 871 5539
-            </a>
+            <div class="contact-icon">📞</div>
+            <div class="contact-content">
+              <div class="contact-label">Contacto Glóbika</div>
+              <a href="tel:+573118715539" class="contact-link">
+                Tel: +57 311 871 5539
+              </a>
+              <div class="contact-small">soporte@globika.com | Lun-Vie 8:00-18:00</div>
+            </div>
           </div>
-        </div>
-      </div>
+      </div> -->
 
-      <!-- WhatsApp contacto -->
+      <!-- WhatsApp contacto
       <div class="whatsapp-contact">
         <div class="whatsapp-title">O escribenos directo al Whatsapp</div>
-        <a href="https://wa.me/573118715539?text=Hola,%20necesito%20ayuda%20urgente%20con%20el%20sitio"
-           class="whatsapp-btn"
-           target="_blank"
-           rel="noopener noreferrer">
+          <a href="https://wa.me/573118715539?text=Hola,%20necesito%20ayuda%20con%20Glóbika"
+            class="whatsapp-btn"
+            target="_blank"
+            rel="noopener noreferrer">
           <div class="whatsapp-icon">
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.051 3.488"/>
@@ -93,7 +94,7 @@
             <span class="whatsapp-number">+57 311 871 5539</span>
           </div>
         </a>
-      </div>
+      </div> -->
 
       <!-- Mensaje de agradecimiento -->
       <div class="thank-you">
@@ -103,9 +104,9 @@
     </div>
 
     <!-- Footer con información adicional -->
-    <div class="maintenance-footer">
-      <p>&copy; {{ currentYear }} DigitalWallpapers. Todos los derechos reservados.</p>
-      <!-- <p class="last-updated">Última actualización: {{ lastUpdated }}</p> -->
+      <div class="maintenance-footer">
+      <p>&copy; {{ currentYear }} Glóbika. Todos los derechos reservados.</p>
+      <p class="small-muted">Glóbika - Soluciones lingüísticas y tecnológicas.</p>
     </div>
   </div>
 </template>
@@ -184,7 +185,15 @@ onUnmounted(() => {
 <style scoped>
 .maintenance-container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  background:
+    linear-gradient(
+      251.52deg,
+      rgba(170, 0, 166, 0.78) 4.31%,
+      rgba(61, 0, 173, 0.75) 25.6%,
+      rgba(0, 10, 172, 0.72) 47.51%,
+      rgba(0, 5, 89, 0.78) 77.72%,
+      rgba(0, 0, 0, 0.85) 98.63%
+    );
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -365,7 +374,7 @@ onUnmounted(() => {
 }
 
 .highlight {
-  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #ffe8ff 40%, #ffffff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -525,15 +534,21 @@ onUnmounted(() => {
 
 .contact-link {
   font-size: 1.1rem;
-  color: #60a5fa;
+  color: #ffd9ff;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   transition: color 0.3s ease;
 }
 
 .contact-link:hover {
-  color: #93c5fd;
+  color: #ffffff;
   text-decoration: underline;
+}
+
+.contact-small {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.85);
 }
 
 /* WhatsApp contacto */
@@ -552,26 +567,26 @@ onUnmounted(() => {
   display: inline-flex;
   align-items: center;
   gap: 1rem;
-  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  background: linear-gradient(135deg, #ff6fd8 0%, #be009f 60%, #001A70 100%);
   color: white;
   text-decoration: none;
   padding: 1rem 2rem;
   border-radius: 50px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1rem;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
   border: none;
-  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+  box-shadow: 0 6px 28px rgba(190,0,159,0.18);
   min-width: 280px;
   justify-content: center;
 }
 
 .whatsapp-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
-  background: linear-gradient(135deg, #128c7e 0%, #25d366 100%);
+  box-shadow: 0 10px 40px rgba(190,0,159,0.25);
+  filter: brightness(1.02);
 }
 
 .whatsapp-icon {

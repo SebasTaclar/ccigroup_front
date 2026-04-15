@@ -348,4 +348,28 @@ const exploreSolutions = () => {
   box-shadow: 0 4px 12px rgba(0, 26, 112, 0.3);
   transform: translateY(-2px);
 }
+
+/* Hover/Focus override for banner buttons: blanco con texto negro */
+.banner-content .btn:hover,
+.banner-content .btn:focus,
+.banner-content .btn:focus-visible {
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  transform: translateY(-2px);
+}
+
+.banner-content .btn:hover .arrow,
+.banner-content .btn:focus .arrow,
+.banner-content .btn:focus-visible .arrow {
+  color: #000000;
+}
+
+/* Asegurar que las clases específicas también se sobreescriban dentro del banner */
+.banner-content .hero-primary:hover,
+.banner-content .hero-secondary:hover,
+.banner-content .contact-btn:hover {
+  background: #ffffff;
+  color: #000000;
+}
 </style>
