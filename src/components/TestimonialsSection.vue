@@ -13,8 +13,8 @@
         <h3 class="cta-title">¿Necesitas apoyo lingüístico en Colombia<span class="rating-simbolos">?</span></h3>
         <p class="cta-desc">En Glóbika estamos listos para ayudarte con interpretación, traducción, notarización y soluciones multilingües adaptadas a tu necesidad.</p>
         <div class="cta-buttons">
-          <a href="#contact" class="cta-btn cta-primary">Hablar con un asesor</a>
-          <a href="#contact" class="cta-btn cta-outline">Solicitar servicio</a>
+          <a href="#contact" class="cta-btn cta-primary arrow">Hablar con un asesor <span class="arrow">›</span></a>
+          <a href="#contact" class="cta-btn cta-outline arrow">Solicitar servicio <span class="arrow">›</span></a>
         </div>
       </div>
     </div>
@@ -120,11 +120,43 @@ defineOptions({ name: 'TestimonialsSection' })
 .cta-primary {
   background: #be009f;
   color: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .cta-outline {
+  /* estilo secundario: fondo blanco, texto negro, sombra */
   background: #be009f;
   color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Arrow animation */
+.cta-btn .arrow {
+  display: inline-block;
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover / Focus: botón blanco con texto negro */
+.cta-btn:hover,
+.cta-btn:focus,
+.cta-btn:focus-visible {
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.cta-btn:hover .arrow,
+.cta-btn:focus .arrow,
+.cta-btn:focus-visible .arrow {
+  transform: translateX(4px);
+  color: #000000;
+}
+
+.cta-btn:active {
+  transform: translateY(-1px);
 }
 
 @media (max-width: 768px) {

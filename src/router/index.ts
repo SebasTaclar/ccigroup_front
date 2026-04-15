@@ -105,6 +105,47 @@ const router = createRouter({
       name: 'payment-pending',
       component: () => import('../views/PaymentPending.vue'),
     },
+    // Rutas en mantenimiento (redirigidas a la vista de mantenimiento)
+    {
+      path: '/about',
+      name: 'about',
+      component: () => import('../views/Maintenance.vue'),
+    },
+    {
+      path: '/about-team',
+      name: 'about-team',
+      component: () => import('../views/Maintenance.vue'),
+    },
+    {
+      path: '/about-careers',
+      name: 'about-careers',
+      component: () => import('../views/Maintenance.vue'),
+    },
+    {
+      path: '/solutions',
+      name: 'solutions',
+      component: () => import('../views/Maintenance.vue'),
+    },
+    {
+      path: '/industries',
+      name: 'industries',
+      component: () => import('../views/Maintenance.vue'),
+    },
+    {
+      path: '/fogonadua',
+      name: 'fogonadua',
+      component: () => import('../views/Maintenance.vue'),
+    },
+    {
+      path: '/notarization',
+      name: 'notarization',
+      component: () => import('../views/Maintenance.vue'),
+    },
+    {
+      path: '/resources',
+      name: 'resources',
+      component: () => import('../views/Maintenance.vue'),
+    },
     // Catch-all route - debe ir al final
     {
       path: '/:pathMatch(.*)*',

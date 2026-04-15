@@ -2,6 +2,14 @@
   <section class="what-sets-us-apart">
     <div class="overlay"></div>
     <div class="container">
+      <!-- Intro solicitado por el usuario: Glóbika en Colombia -->
+      <div class="wsua-intro">
+        <h2 class="wsua-intro-title">Glóbika en Colombia</h2>
+        <p class="wsua-intro-text">Glóbika es la operación para Colombia de una organización con trayectoria internacional en servicios lingüísticos. Como parte de CCI Group, llegamos al país con el objetivo de ofrecer soluciones profesionales de interpretación, traducción, notarización y apoyo multilingüe para diferentes sectores.</p>
+        <p class="wsua-intro-text wsua-intro-strong">Nuestro enfoque combina experiencia operativa, estándares de calidad y entendimiento cultural para ayudar a que cada mensaje llegue de forma correcta, oportuna y profesional.</p>
+        <p class="wsua-intro-text">No solo traducimos palabras: facilitamos entendimiento, continuidad operativa y confianza entre las partes.</p>
+      </div>
+
       <header class="wsua-header wsua-header-center">
         <h3 class="wsua-title-es">Dónde marcamos la diferencia</h3>
       </header>
@@ -163,7 +171,7 @@ onBeforeUnmount(() => {
       rgba(0, 5, 89, 0.78) 77.72%,
       rgba(0, 0, 0, 0.85) 98.63%
     ),
-    url('https://www.linguaris.com/wp-content/uploads/2024/07/B02.png');
+    url('https://www.translate.one/wp-content/uploads/Translations-for-Technology-1.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -247,6 +255,37 @@ onBeforeUnmount(() => {
   letter-spacing: 1px;
 }
 
+.wsua-intro {
+  max-width: 1100px;
+  margin: 0 auto 20px;
+  text-align: left;
+  padding: 0 12px;
+}
+
+.wsua-intro-title {
+  font-size: clamp(20px, 3.2vw, 32px);
+  color: #ffffff;
+  margin: 0 0 8px 0;
+  font-weight: 400;
+}
+
+.wsua-intro-text {
+  color: #e5e7eb;
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 0 0 10px 0;
+  max-width: 1000px;
+  text-align: justify;
+}
+
+.wsua-title-es{
+  font-size: 24px;
+}
+
+.wsua-intro-strong {
+  font-weight: 600;
+}
+
 .wsua-stats {
   margin-top: 8px;
 }
@@ -328,6 +367,15 @@ onBeforeUnmount(() => {
 
   .wsua-feature-grid {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .wsua-intro-title {
+    font-size: 24px;
+  }
+
+  .wsua-intro-text {
+    font-size: 16px;
+    text-align: justify;
   }
 }
 </style>

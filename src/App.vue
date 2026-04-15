@@ -15,33 +15,33 @@
 
       <!-- Navegación principal -->
       <div class="nav-menu desktop-nav">
-        <a href="#home" class="nav-link" @click="closeMobileMenu">INICIO</a>
+        <RouterLink to="/" class="nav-link" @click="closeMobileMenu">INICIO</RouterLink>
 
         <div class="nav-item nav-item--dropdown">
-          <button type="button" class="nav-link nav-link--dropdown">
+          <RouterLink to="/about" class="nav-link nav-link--dropdown" @click="closeMobileMenu">
             ACERCA DE
             <span class="nav-caret">▾</span>
-          </button>
+          </RouterLink>
           <div class="dropdown-menu">
-            <a href="#about" class="dropdown-link" @click="closeMobileMenu">Acerca de CCI Group</a>
-            <a href="#about-team" class="dropdown-link" @click="closeMobileMenu">Nuestro equipo</a>
-            <a href="#about-careers" class="dropdown-link" @click="closeMobileMenu">Carreras profesionales</a>
+            <RouterLink to="/about" class="dropdown-link" @click="closeMobileMenu">Acerca de CCI Group</RouterLink>
+            <RouterLink to="/about-team" class="dropdown-link" @click="closeMobileMenu">Nuestro equipo</RouterLink>
+            <RouterLink to="/about-careers" class="dropdown-link" @click="closeMobileMenu">Carreras profesionales</RouterLink>
           </div>
         </div>
 
-        <a href="#solutions" class="nav-link" @click="closeMobileMenu">SOLUCIONES </a>
-        <a href="#industries" class="nav-link" @click="closeMobileMenu">INDUSTRIAS</a>
-        <a href="#fogonadua" class="nav-link" @click="closeMobileMenu">SOCIOS</a>
-        <a href="#notarization" class="nav-link" @click="closeMobileMenu">NOTARIZACIÓN</a>
+        <RouterLink to="/solutions" class="nav-link" @click="closeMobileMenu">SOLUCIONES</RouterLink>
+        <RouterLink to="/industries" class="nav-link" @click="closeMobileMenu">INDUSTRIAS</RouterLink>
+        <RouterLink to="/fogonadua" class="nav-link" @click="closeMobileMenu">SOCIOS</RouterLink>
+        <RouterLink to="/notarization" class="nav-link" @click="closeMobileMenu">NOTARIZACIÓN</RouterLink>
 
         <div class="nav-item nav-item--dropdown">
-          <button type="button" class="nav-link nav-link--dropdown">
+          <RouterLink to="/resources" class="nav-link nav-link--dropdown" @click="closeMobileMenu">
             RECURSOS
             <span class="nav-caret">▾</span>
-          </button>
+          </RouterLink>
           <div class="dropdown-menu">
-            <a href="#resources" class="dropdown-link" @click="closeMobileMenu">Blog y noticias</a>
-            <a href="#resources" class="dropdown-link" @click="closeMobileMenu">Podcast</a>
+            <RouterLink to="/resources" class="dropdown-link" @click="closeMobileMenu">Blog y noticias</RouterLink>
+            <RouterLink to="/resources" class="dropdown-link" @click="closeMobileMenu">Podcast</RouterLink>
           </div>
         </div>
       </div>
@@ -76,7 +76,7 @@
       >
         <div class="mobile-menu-content">
           <div class="mobile-nav-links">
-            <a href="#home" class="mobile-link" @click="closeMobileMenu">INICIO</a>
+            <RouterLink to="/" class="mobile-link" @click="closeMobileMenu">INICIO</RouterLink>
 
             <div class="mobile-accordion-item">
               <button type="button" class="mobile-link mobile-link--accordion" @click="toggleMobileAbout">
@@ -84,16 +84,16 @@
                 <span class="mobile-caret" :class="{ open: isMobileAboutOpen }">▾</span>
               </button>
               <div class="mobile-submenu" :class="{ open: isMobileAboutOpen }">
-                <a href="#about" class="mobile-sublink" @click="closeMobileMenu">Acerca de CCI Group</a>
-                <a href="#about-team" class="mobile-sublink" @click="closeMobileMenu">Nuestro equipo</a>
-                <a href="#about-careers" class="mobile-sublink" @click="closeMobileMenu">Carreras profesionales</a>
+                <RouterLink to="/about" class="mobile-sublink" @click="closeMobileMenu">Acerca de CCI Group</RouterLink>
+                <RouterLink to="/about-team" class="mobile-sublink" @click="closeMobileMenu">Nuestro equipo</RouterLink>
+                <RouterLink to="/about-careers" class="mobile-sublink" @click="closeMobileMenu">Carreras profesionales</RouterLink>
               </div>
             </div>
 
-            <a href="#solutions" class="mobile-link" @click="closeMobileMenu">SOLUCIONES</a>
-            <a href="#industries" class="mobile-link" @click="closeMobileMenu">INDUSTRIAS</a>
-            <a href="#fogonadua" class="mobile-link" @click="closeMobileMenu">SOCIOS</a>
-            <a href="#notarization" class="mobile-link" @click="closeMobileMenu">NOTARIZACIÓN</a>
+            <RouterLink to="/solutions" class="mobile-link" @click="closeMobileMenu">SOLUCIONES</RouterLink>
+            <RouterLink to="/industries" class="mobile-link" @click="closeMobileMenu">INDUSTRIAS</RouterLink>
+            <RouterLink to="/fogonadua" class="mobile-link" @click="closeMobileMenu">SOCIOS</RouterLink>
+            <RouterLink to="/notarization" class="mobile-link" @click="closeMobileMenu">NOTARIZACIÓN</RouterLink>
 
             <div class="mobile-accordion-item">
               <button type="button" class="mobile-link mobile-link--accordion" @click="toggleMobileResources">
@@ -101,8 +101,8 @@
                 <span class="mobile-caret" :class="{ open: isMobileResourcesOpen }">▾</span>
               </button>
               <div class="mobile-submenu" :class="{ open: isMobileResourcesOpen }">
-                <a href="#resources" class="mobile-sublink" @click="closeMobileMenu">Blog y noticias</a>
-                <a href="#resources" class="mobile-sublink" @click="closeMobileMenu">Podcast</a>
+                <RouterLink to="/resources" class="mobile-sublink" @click="closeMobileMenu">Blog y noticias</RouterLink>
+                <RouterLink to="/resources" class="mobile-sublink" @click="closeMobileMenu">Podcast</RouterLink>
               </div>
             </div>
           </div>
@@ -133,42 +133,48 @@
     </nav>
   </header>
 
-  <!-- Main Banner -->
-  <MainBanner @showRules="openRulesModal" />
-  <TrustSection />
-  <WhoWeAre />
-  <ValueSection />
+  <div v-if="route.name === 'home'">
+    <!-- Main Banner -->
+    <MainBanner @showRules="openRulesModal" />
+    <TrustSection />
+    <WhatSetsUsApart />
+    <ValueSection />
 
-  <!-- Clientes/Socios Section -->
-  <ClientsSection />
 
-  <!-- What Sets Us Apart Section (temporalmente oculto) -->
+    <!-- Clientes/Socios Section -->
+    <ClientsSection />
 
-  <!-- Core Services Section -->
-  <ServicesSection />
+    <!-- What Sets Us Apart Section (temporalmente oculto) -->
 
-  <!-- Industries Section -->
-  <IndustriesSection />
-  <WhyChoose />
+    <!-- Core Services Section -->
+    <ServicesSection />
 
-  <!-- Process Section -->
-  <ProcessSection />
+    <!-- Industries Section -->
+    <IndustriesSection />
+    <WhyChoose />
 
-  <!-- Testimonials Section -->
-  <TestimonialsSection />
+    <!-- Process Section -->
+    <ProcessSection />
 
-  <!-- Resources and Blog Section (temporalmente reemplazado por BusinessSolutionsSection) -->
-  <BusinessSolutionsSection />
-  <ClosingSection />
+    <!-- Testimonials Section -->
+    <TestimonialsSection />
 
-  <!-- Botón flotante de WhatsApp -->
-  <WhatsAppFloating />
+    <!-- Resources and Blog Section (temporalmente reemplazado por BusinessSolutionsSection) -->
+    <BusinessSolutionsSection />
+    <ClosingSection />
 
-  <!-- Contact Section -->
-  <ContactSection />
+    <!-- Botón flotante de WhatsApp -->
+    <WhatsAppFloating />
 
-  <!-- Footer -->
-  <Footer_ />
+    <!-- Contact Section -->
+    <ContactSection />
+
+    <!-- Footer -->
+    <Footer_ />
+  </div>
+
+  <!-- Rutas (otras vistas) -->
+  <router-view v-else />
 </template>
 
 <script setup lang="ts">
@@ -176,10 +182,10 @@ import { RouterLink, useRoute } from 'vue-router';
 import { authService } from '@/services/api';
 import { onBeforeUnmount, onMounted, ref, watch } from 'vue';
 import ValueSection from '@/components/ValueSection.vue';
+import WhatSetsUsApart from '@/components/WhatSetsUsApart.vue';
 import router from './router';
 import MainBanner from '@/components/MainBanner.vue';
 import TrustSection from '@/components/TrustSection.vue';
-import WhoWeAre from '@/components/WhoWeAre.vue';
 import WhyChoose from '@/components/WhyChoose.vue';
 import WhatsAppFloating from '@/components/WhatsAppFloating.vue';
 import ServicesSection from '@/components/ServicesSection.vue';
