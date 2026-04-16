@@ -10,11 +10,11 @@
     </div>
 
     <div class="banner-content">
-      <h1 class="banner-title">Soluciones lingüísticas integrales para Colombia</h1>
-      <p class="banner-subtitle">Interpretación<span class="rating-simbolos">,</span>traducción<span class="rating-simbolos">,</span> notarización y apoyo multilingüe para empresas<span class="rating-simbolos">,</span> entidades<span class="rating-simbolos">,</span> instituciones y personas que necesitan comunicarse con claridad<span class="rating-simbolos">,</span> precisión y confianza<span class="rating-simbolos">.</span></p>
+      <h1 class="banner-title">Soluciones lingüísticas integrales para Latinoamérica</h1>
+      <p class="banner-subtitle">Interpretación<span class="rating-simbolos">,</span> traducción<span class="rating-simbolos">,</span> notarización remota y apoyo multilingüe para empresas<span class="rating-simbolos">,</span> instituciones y personas que necesitan comunicarse con claridad y confianza<span class="rating-simbolos">.</span></p>
 
       <p class="banner-description">
-        Glóbika hace parte de CCI Group, organización con experiencia internacional en servicios lingüísticos y soluciones de comunicación multicultural. Hoy llegamos a Colombia para poner esa capacidad al servicio del mercado local, con una propuesta adaptada a las necesidades del país.
+        Glóbika es la operación latinoamericana de CCI Group, empresa con más de 14 años de experiencia en servicios lingüísticos para agencias federales, corporaciones y organizaciones internacionales en Estados Unidos. Desde Colombia, acercamos esa misma capacidad a Latinoamérica con una propuesta adaptada al contexto y las necesidades del mercado local.
       </p>
 
       <div class="banner-buttons">
@@ -29,7 +29,7 @@
           target="_blank"
           rel="noopener"
           class="btn contact-btn"
-        >Mas sobre CCI Group</a>
+        >Más sobre CCI Group</a>
       </div>
 
       <!-- <p class="banner-rating">
@@ -69,7 +69,7 @@ const exploreSolutions = () => {
   position: relative;
   width: 100%;
   height: 250px;
-  min-height: 115vh;
+  min-height: 120vh;
   margin-top: 0;
   display: flex;
   align-items: flex-start;
@@ -110,7 +110,7 @@ const exploreSolutions = () => {
   z-index: 3;
   max-width: 1000px;
   padding-left: 60px;
-  padding-top: 120px;
+  padding-top: 110px;
   padding-right: 50px;
   color: #ffffff;
   display: flex;
@@ -310,6 +310,7 @@ const exploreSolutions = () => {
 
   .banner-subtitle {
     font-size: 16px;
+    text-align: justify;
   }
 
   .banner-description {

@@ -2,15 +2,15 @@
   <section class="value-section" aria-labelledby="value-title">
     <div class="value-container">
       <h2 id="value-title" class="value-title">Más que un proveedor de idiomas<span class="rating-simbolos">,</span> un aliado estratégico</h2>
-      <p class="value-intro">Ayudamos a organizaciones y personas a comunicarse de manera efectiva en escenarios donde la precisión importa.</p>
+      <p class="value-intro">Acompañamos a organizaciones y personas en situaciones donde comunicarse con precisión no es opcional.</p>
 
       <ul class="value-list" role="list">
-        <li>Cobertura de servicios lingüísticos integrales</li>
-        <li>Atención profesional y acompañamiento personalizado</li>
-        <li>Capacidad para procesos presenciales, virtuales y remotos</li>
-        <li>Enfoque en calidad, confidencialidad y oportunidad</li>
-        <li>Adaptación al contexto cultural y operativo de Colombia</li>
-        <li>Respaldo de experiencia internacional a través de CCI Group</li>
+        <li>Soluciones lingüísticas integrales para distintos sectores y necesidades</li>
+        <li>Adaptación al contexto cultural y operativo de Colombia y Latinoamérica</li>
+        <li>Capacidad de atención presencial y remota</li>
+        <li>Compromiso con la calidad, la confidencialidad y la oportunidad</li>
+        <li>Acompañamiento cercano, profesional y personalizado</li>
+        <li>Respaldo internacional a través de la experiencia de CCI Group</li>
       </ul>
     </div>
   </section>
@@ -81,7 +81,7 @@ defineOptions({ name: 'ValueSection' })
 }
 
 @media (max-width: 768px) {
-  .value-list { grid-template-columns: 1fr; }
+  .value-list { grid-template-columns: 1fr; text-align: justify; }
   .value-section { padding: 32px 16px; }
   .value-container { align-items: center; text-align: left; }
   .value-title {    font-size: clamp(24px, 3.6vw, 24px);  }
