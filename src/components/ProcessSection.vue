@@ -17,7 +17,7 @@
 
         <div class="process-image-wrapper">
           <img
-            src="https://thespanishgroup.org/traducciones/wp-content/uploads/2020/07/certified-translation-service-the-spanish-group-2-scaled.jpg"
+            src="https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/04/asl-fEDEERAL-1024x572.jpg"
             alt="Cliente hablando por telÉfono con un intÉrprete"
             class="process-image"
           />
@@ -80,7 +80,6 @@ const steps = ref([
 .process-hero {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-  gap: 48px;
   align-items: center;
   margin-bottom: 64px;
 }
@@ -141,14 +140,15 @@ const steps = ref([
   border-radius: 24px;
   overflow: hidden;
   min-height: 260px;
+  height: 430px;
 }
 
 .process-image {
-  width: 100%;
-  height: 100%;
+  width: 110%;
+  height: 110%;
   object-fit: cover;
   display: block;
-}
+  transform: translate(-5%, -5%);}
 
 .process-grid {
   display: grid;
@@ -235,6 +235,9 @@ const steps = ref([
     padding: 24px 22px 22px;
   }
 
+  .process-image-wrapper {
+    height: 300px;
+  }
   .process-card-number {
     width: 56px;
     height: 56px;

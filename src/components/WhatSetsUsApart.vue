@@ -4,36 +4,36 @@
     <div class="container">
       <!-- Intro solicitado por el usuario: Glóbika en Colombia -->
       <div class="wsua-intro">
-        <h2 class="wsua-intro-title">Glóbika en Colombia</h2>
-        <p class="wsua-intro-text">Glóbika es la operación para Colombia de una organización con trayectoria internacional en servicios lingüísticos. Como parte de CCI Group, llegamos al país con el objetivo de ofrecer soluciones profesionales de interpretación, traducción, notarización y apoyo multilingüe para diferentes sectores.</p>
-        <p class="wsua-intro-text wsua-intro-strong">Nuestro enfoque combina experiencia operativa, estándares de calidad y entendimiento cultural para ayudar a que cada mensaje llegue de forma correcta, oportuna y profesional.</p>
-        <p class="wsua-intro-text">No solo traducimos palabras: facilitamos entendimiento, continuidad operativa y confianza entre las partes.</p>
+        <h2 class="wsua-intro-title">¿Por qué Globika<span class="rating-simbolos">?</span></h2>
+        <p class="wsua-intro-text">Combinamos estándares internacionales, experiencia operativa y sensibilidad cultural para responder a las necesidades reales de Colombia y Latinoamérica. Acompañamos a empresas, instituciones y personas con soluciones lingüísticas confiables, oportunas y adaptadas al contexto de cada interacción.
+         <br><br>Más que traducir palabras, facilitamos entendimiento, continuidad operativa y confianza entre las partes, con el nivel de precisión y acompañamiento que requieren los entornos profesionales.
+        </p>
       </div>
 
       <header class="wsua-header wsua-header-center">
-        <h3 class="wsua-title-es">Dónde marcamos la diferencia</h3>
+        <h3 class="wsua-title-es">Lo que nos diferencia</h3>
       </header>
 
       <div class="wsua-feature-grid">
         <div class="wsua-feature-card">
           <p class="wsua-paragraph">
-            <strong>Respuesta inmediata de<span class="rating-number">: 48</span> Segundos</strong>
+            <strong>Conexión con intérpretes<span class="rating-number">: </span><br> <span class="rating-number">48 </span> Segundos</strong>
 
-            <br>Acceda a intérpretes en remoto en menos de 48 segundos: sin demoras ni incertidumbre. Nuestra tecnología de avanzada garantiza el acceso en tiempo real a intérpretes en cualquier idioma, en cualquier momento y lugar.
+            <br>Acceda a interpretación remota en menos de 48 segundos: sin demoras ni incertidumbre. Nuestra tecnología avanzada le conecta en tiempo real con intérpretes en el idioma que necesita, cuando y donde lo necesita.
           </p>
         </div>
 
         <div class="wsua-feature-card">
           <p class="wsua-paragraph">
-            <strong>Disponibilidad total<span class="rating-number">: 24/7</span></strong><br>
-            <br>Soporte las 24 horas, los 365 días del año. Sus necesidades lingüísticas no tienen horario, nosotros tampoco. Personas reales, listas para ayudar en cualquier momento y lugar.
+            <strong>Disponibilidad total<span class="rating-number">: <br>24/7</span></strong><br>
+            Estamos disponibles las 24 horas del día, los 365 días del año, porque sus necesidades lingüísticas no se detienen. Siempre contará con respaldo humano y atención oportuna cuando su operación lo requiera.
           </p>
         </div>
 
         <div class="wsua-feature-card">
           <p class="wsua-paragraph">
-            <strong>Más de <span class="rating-number">350</span> idiomas a su disposición</strong><br>
-            Desde el árabe hasta la lengua de señas colombiana, ofrecemos servicios lingüísticos que respetan los matices culturales y facilitan una conexión humana auténtica.
+            <strong>Más de <span class="rating-number">350</span> idiomas <br>disponibles</strong><br>
+            <br>Desde árabe hasta lengua de señas colombiana, ofrecemos soluciones lingüísticas que respetan los matices culturales y facilitan una comunicación clara, precisa y humana.
           </p>
         </div>
       </div>
@@ -61,7 +61,7 @@
             <span class="wsua-stat-text">Disponibilidad global</span>
           </li>
           <li class="wsua-stat-item">
-            <span class="wsua-stat-number"><span class="wsua-stat-number-value">{{ stat12 }}</span>+</span>
+            <span class="wsua-stat-number"><span class="wsua-stat-number-value">{{ stat14 }}</span>+</span>
             <span class="wsua-stat-text">Años al servicio de la justicia, el gobierno y la educación</span>
           </li>
           <li class="wsua-stat-item">
@@ -83,7 +83,7 @@ const stat350 = ref(0)
 const stat989 = ref(0)
 const stat48 = ref(0)
 const stat24 = ref(0)
-const stat12 = ref(0)
+const stat14 = ref(0)
 const stat10 = ref(0)
 
 let observer: IntersectionObserver | null = null
@@ -113,7 +113,7 @@ function startCounters() {
   animateCounter(stat989, 98.9, 1200, 1)
   animateCounter(stat48, 48, 1200)
   animateCounter(stat24, 24, 1200)
-  animateCounter(stat12, 12, 1200)
+  animateCounter(stat14, 14, 1200)
   animateCounter(stat10, 10, 1200)
 }
 
@@ -200,7 +200,7 @@ onBeforeUnmount(() => {
 
 .wsua-title-en {
   font-size: clamp(22px, 3vw, 26px);
-  font-weight: 800;
+  font-weight: 600;
   color: #f9fafb;
   margin: 0 0 4px 0;
   letter-spacing: 0.08em;
@@ -249,7 +249,7 @@ onBeforeUnmount(() => {
 }
 
 .wsua-paragraph strong {
-  font-weight: 800;
+  font-weight: 600;
   color: #ffffff;
   font-family: var(--font-primary);
   letter-spacing: 1px;
@@ -267,6 +267,12 @@ onBeforeUnmount(() => {
   color: #ffffff;
   margin: 0 0 8px 0;
   font-weight: 400;
+}
+
+.rating-simbolos {
+  font-size: 38px;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .wsua-intro-text {

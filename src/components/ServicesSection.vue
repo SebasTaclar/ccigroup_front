@@ -63,8 +63,8 @@ const services = ref<Service[]>([
     icon: 'fas fa-headset',
     title: 'Interpretación',
     description: 'Facilitamos la comunicación oral en tiempo real entre personas que hablan diferentes idiomas, con apoyo profesional y precisión contextual.',
-    image: 'https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/03/66a50b29ea3a0bbf1698715c_Solutions_InPersonInterpreting.jpg',
-    features: ['Reuniones corporativas', 'Capacitaciones', 'Entrevistas', 'Audiencias y diligencias', 'Consultas médicas', 'Acompañamiento institucional', 'Eventos y conferencias']
+    image: 'https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/03/Legal-1536x1024.jpg',
+    features: []
   },
   {
     icon: 'fas fa-file-alt',
@@ -72,30 +72,31 @@ const services = ref<Service[]>([
     description: 'Traducimos documentos con enfoque profesional, cuidando el sentido, la terminología y la intención del contenido original.',
     image:
       'https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/03/edited_photo_v2-1536x1147.jpg',
-    features: ['Documentos corporativos', 'Contratos y documentos legales', 'Contenido institucional', 'Material comercial', 'Documentación técnica', 'Certificados y documentos personales', 'Contenido académico y administrativo']
+    features: []
   },
   {
     icon: 'fas fa-certificate',
-    title: 'Notarización',
+    title: 'Notarización Remota',
     description: 'Apoyamos procesos documentales que requieren formalidad y respaldo en la presentación de información para trámites y gestiones específicas.',
-    image: 'https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/03/33395-1024x683.webp',
-    features: ['Nuestro equipo orienta al cliente durante el proceso para asegurar claridad, orden documental y cumplimiento de los requerimientos aplicables']
+    image: 'https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/04/LAB0292-1.jpg',
+    features: []
   },
   {
     icon: 'fas fa-users',
-    title: 'Soluciones multilingües para empresas',
+    title: 'Soluciones Globales de Talento',
     description: 'Acompañamos organizaciones que necesitan operar, atender usuarios o relacionarse con públicos multilingües de manera consistente y profesional.',
     image:
       'https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/03/66a50b2985f716cda4bbfe35_Solutions_cultural-awareness.jpg',
-    features: ['Soporte lingüístico para atención al cliente', 'Apoyo en procesos internos y operativos', 'Traducción de materiales corporativos', 'Interpretación para reuniones y visitas', 'Acompañamiento en expansión y relacionamiento internacional']},
+    features: []
+  },
   {
     icon: 'fas fa-sign-language',
     title: 'Apoyo para eventos',
     description: 'Brindamos soporte lingüístico para encuentros empresariales, institucionales, académicos y sectoriales donde se requiere comunicación fluida entre asistentes de distintos idiomas.',
     image:
-      'https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/03/66a50b29f2a7150c88006e39_Solutions-508-Compliance_upscayl_3x_upscayl-standard-4x-1024x768.webp',
-    features: ['Interpretación para conferencias y paneles', 'Apoyo para invitados internacionales', 'Coordinación lingüística del evento', 'Soluciones para formatos presenciales e híbridos']
-},
+      'https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/04/mid-section-of-female-teacher-and-girl-talking-to-S4K96GN-1-1536x1024.jpg',
+    features: []
+  },
 
   // {
   //   icon: 'fas fa-globe-americas',
@@ -219,7 +220,8 @@ const scrollToContact = () => {
 
 .services-viewport {
   overflow: hidden;
-  padding-bottom: 10px;
+  padding-bottom: 1px;
+  border-radius: 24px;
 }
 
 .services-track {
@@ -253,10 +255,10 @@ const scrollToContact = () => {
 }
 
 .service-content {
-  padding: 28px 14px 0;
+  padding: 24px 24px 0 24px;
   display: flex;
   flex-direction: column;
-  height: 70%;
+  height: 60%;
 }
 
 .service-title {
@@ -406,13 +408,13 @@ const scrollToContact = () => {
   }
 
   .carousel-arrow.left {
-    left: 1px;
-    top: 220px;
+    left: 0;
+    top: 190px;
   }
 
   .carousel-arrow.right {
-    right: 1px;
-    top: 220px;
+    right: 0px;
+    top: 190px;
   }
 }
 </style>

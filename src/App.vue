@@ -151,7 +151,7 @@
 
     <!-- Industries Section -->
     <IndustriesSection />
-    <WhyChoose />
+    <!-- <WhyChoose /> -->
 
     <!-- Process Section -->
     <ProcessSection />
@@ -186,7 +186,6 @@ import WhatSetsUsApart from '@/components/WhatSetsUsApart.vue';
 import router from './router';
 import MainBanner from '@/components/MainBanner.vue';
 import TrustSection from '@/components/TrustSection.vue';
-import WhyChoose from '@/components/WhyChoose.vue';
 import WhatsAppFloating from '@/components/WhatsAppFloating.vue';
 import ServicesSection from '@/components/ServicesSection.vue';
 import IndustriesSection from '@/components/IndustriesSection.vue';

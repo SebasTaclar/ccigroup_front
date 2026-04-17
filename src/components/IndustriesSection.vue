@@ -19,7 +19,7 @@
           </div>
 
           <p class="section-subtitle1">
-            Cada sector tiene su propio lenguaje, sensibilidad y nivel de exigencia. Por eso trabajamos cada servicio con criterio profesional, preparación y adaptación al contexto.
+            Cada sector tiene su propio lenguaje, sus propios procesos y su propio nivel de exigencia. Por eso adaptamos cada servicio al contexto operativo, cultural y profesional de cada interacción.
           </p>
 
           <!-- <button class="view-all-btn" type="button">
@@ -31,7 +31,7 @@
         <div class="image-column">
           <div class="industries-image-wrapper">
             <img
-              src="https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/03/pexels-mikhail-nilov-6592395-1024x682.webp"
+              src="https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/04/strategy-2.jpg"
               alt="Profesionales colaborando en una mesa de trabajo"
               class="industries-image"
             />
@@ -114,6 +114,7 @@ const industryColumns = computed(() => {
   max-width: 620px;
   line-height: 1.8;
   font-weight: 400;
+  text-align: justify;
 }
 
 .section-subtitle1 {
@@ -123,6 +124,7 @@ const industryColumns = computed(() => {
   max-width: 620px;
   line-height: 1.8;
   font-weight: 400;
+  text-align: justify;
 }
 
 .industries-lists {
