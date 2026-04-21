@@ -6,9 +6,9 @@
         <div class="footer-grid">
           <!-- Columna 1: Marca -->
           <div class="footer-col brand-col">
-            <img src="/images/logo.png" alt="Glóbika Logo" class="footer-logo">
+            <img src="/images/logo.png" alt="Globika Logo" class="footer-logo">
             <p class="footer-brand-desc">
-              Glóbika ofrece soluciones lingüísticas innovadoras que permiten el éxito de las organizaciones en un mundo globalizado.
+              Globika ofrece soluciones lingüísticas innovadoras que permiten el éxito de las organizaciones en un mundo globalizado.
             </p>
           </div>
 
@@ -16,13 +16,11 @@
           <div class="footer-col">
             <h4 class="footer-col-title">Enlaces rápidos</h4>
             <ul class="footer-links">
-              <li><a href="#home">Hogar</a></li>
-              <li><a href="#about">Sobre nosotros</a></li>
-              <li><a href="#services">Servicios</a></li>
-              <li><a href="#industries">Industrias</a></li>
-              <li><a href="#blog">Blog</a></li>
-              <li><a href="#contact">Contáctanos</a></li>
-              <li><a href="https://a7oqb2wb89ps4x.projectwebtec9.com/" target="_blank" rel="noopener">Ir a página principal</a></li>
+              <li><a href="https://www.juntoslatam.org" target="_blank" rel="noopener">JUNTOS — Asociación de Servicios Lingüísticos de Latinoamérica y el Caribe</a></li>
+              <li><a href="https://fenascol.org.co" target="_blank" rel="noopener">FENASCOL — Federación Nacional de Sordos de Colombia</a></li>
+              <li><a href="https://www.atanet.org" target="_blank" rel="noopener">ATA — American Translators Association</a></li>
+              <li><a href="https://www.actti.org" target="_blank" rel="noopener">ACTTI — Asociación Colombiana de Traductores, Terminólogos e Intérpretes</a></li>
+              <li><a href="https://en.fit-ift.org" target="_blank" rel="noopener">FIT — Federación Internacional de Traductores</a></li>
             </ul>
           </div>
 

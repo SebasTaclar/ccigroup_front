@@ -3,7 +3,7 @@
     <div class="trust-container">
       <h2 id="trust-title" class="trust-title">Experiencia global<span class="rating-simbolos">,</span> enfoque local<span class="rating-simbolos">.</span></h2>
       <p class="trust-text">
-        En Glóbika conectamos idiomas, culturas y contextos. Acompañamos procesos donde la comunicación precisa es clave: reuniones, trámites, atención al cliente, procesos legales, entornos médicos, capacitaciones, eventos, documentos oficiales y operaciones empresariales
+        En Globika conectamos idiomas, culturas y contextos. Acompañamos procesos donde la comunicación precisa es clave: reuniones, trámites, atención al cliente, procesos legales, entornos médicos, capacitaciones, eventos, documentos oficiales y operaciones empresariales
       </p>
     </div>
   </section>

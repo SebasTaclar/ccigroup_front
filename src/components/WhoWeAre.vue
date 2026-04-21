@@ -2,9 +2,9 @@
   <section class="who-section" aria-labelledby="who-title">
     <div class="who-overlay"></div>
     <div class="who-content">
-      <h2 id="who-title" class="who-title">Glóbika en Colombia</h2>
+      <h2 id="who-title" class="who-title">Globika en Colombia</h2>
       <p class="who-text">
-        Glóbika es la operación para Colombia de una organización con trayectoria internacional en servicios lingüísticos. Como parte de CCI Group, llegamos al país con el objetivo de ofrecer soluciones profesionales de interpretación, traducción, notarización y apoyo multilingüe para diferentes sectores.
+        Globika es la operación para Colombia de una organización con trayectoria internacional en servicios lingüísticos. Como parte de CCI Group, llegamos al país con el objetivo de ofrecer soluciones profesionales de interpretación, traducción, notarización y apoyo multilingüe para diferentes sectores.
       </p>
       <p class="who-text who-text--lead">
         Nuestro enfoque combina experiencia operativa, estándares de calidad y entendimiento cultural para ayudar a que cada mensaje llegue de forma correcta, oportuna y profesional.

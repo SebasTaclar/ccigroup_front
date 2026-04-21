@@ -3,7 +3,7 @@
     <div class="closing-overlay"></div>
     <div class="closing-content">
       <h2 id="closing-title" class="closing-title">Conectamos idiomas<span class="rating-simbolos">.</span> Facilitamos entendimiento<span class="rating-simbolos">.</span> Impulsamos confianza<span class="rating-simbolos">.</span></h2>
-      <p class="closing-text">En un entorno cada vez más global, la comunicación precisa ya no es opcional. En Glóbika trabajamos para que cada conversación, documento o interacción multilingüe se convierta en una oportunidad de entendimiento y avance.</p>
+      <p class="closing-text">En un entorno cada vez más global, la comunicación precisa ya no es opcional. En Globika trabajamos para que cada conversación, documento o interacción multilingüe se convierta en una oportunidad de entendimiento y avance.</p>
     </div>
   </section>
 </template>

@@ -2,7 +2,7 @@
   <section class="what-sets-us-apart">
     <div class="overlay"></div>
     <div class="container">
-      <!-- Intro solicitado por el usuario: Glóbika en Colombia -->
+      <!-- Intro solicitado por el usuario: Globika en Colombia -->
       <div class="wsua-intro">
         <h2 class="wsua-intro-title">¿Por qué Globika<span class="rating-simbolos">?</span></h2>
         <p class="wsua-intro-text">Combinamos estándares internacionales, experiencia operativa y sensibilidad cultural para responder a las necesidades reales de Colombia y Latinoamérica. Acompañamos a empresas, instituciones y personas con soluciones lingüísticas confiables, oportunas y adaptadas al contexto de cada interacción.

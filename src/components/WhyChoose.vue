@@ -2,7 +2,7 @@
   <section class="why-section" aria-labelledby="why-title">
     <div class="why-overlay"></div>
     <div class="why-content">
-      <h2 id="why-title" class="why-title">¿Por qué elegir Glóbika<span class="rating-simbolos">?</span></h2>
+      <h2 id="why-title" class="why-title">¿Por qué elegir Globika<span class="rating-simbolos">?</span></h2>
       <p class="why-intro">Porque entendemos que en muchos procesos una buena traducción o una interpretación correcta no es un detalle: es la diferencia entre avanzar con confianza o generar errores, retrasos y malentendidos.</p>
 
       <div class="differentials">
