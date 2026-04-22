@@ -7,8 +7,8 @@
             Cómo trabajamos
           </h2>
           <p class="process-text">
-            Un proceso optimizado diseñado para llevarle desde la solicitud hasta la entrega,
-            con precisión y cumplimiento en cada paso.
+            Un proceso claro y ágil para acompañarle desde la solicitud hasta la entrega,
+            con precisión, seguimiento y cumplimiento en cada etapa.
           </p>
           <!--<button class="process-cta-button" type="button" @click="scrollToContact">
             COMIENCE HOY MISMO <span class="arrow">→</span>
@@ -45,19 +45,19 @@ defineOptions({ name: 'ProcessSection' })
 const steps = ref([
   {
     title: 'Entendemos tu necesidad',
-    description: 'Escuchamos el contexto, el tipo de servicio requerido, los tiempos y el objetivo del proceso.'
+    description: 'Escuchamos el contexto, el tipo de servicio requerido, los tiempos y el objetivo de la solicitud.'
   },
   {
     title: 'Diseñamos la solución adecuada',
-    description: 'Definimos el servicio, el formato de atención y el alcance más conveniente.'
+    description: 'Recomendamos el servicio, la modalidad de atención y el alcance más conveniente para su caso.'
   },
   {
-    title: 'Ejecutamos con acompañamiento',
-    description: 'Coordinamos el servicio con enfoque profesional, calidad y seguimiento.'
+    title: 'Ejecutamos con precisión y acompañamiento',
+    description: 'Coordinamos y desarrollamos el servicio con seguimiento profesional, calidad y respuesta oportuna.'
   },
   {
-    title: 'Construimos relaciones de largo plazo',
-    description: 'Buscamos convertirnos en un aliado confiable para tus necesidades lingüísticas en Colombia.'
+    title: 'Construimos relaciones de confianza',
+    description: 'Más que atender una solicitud puntual, buscamos convertirnos en un aliado confiable para sus necesidades lingüísticas en Colombia y Latinoamérica.'
   }
 ])
 </script>

@@ -4,14 +4,14 @@
     <div class="institutional-content">
       <h2 id="institutional-title" class="institutional-title">Respaldo internacional para Colombia</h2>
       <p class="institutional-text">
-        Glóbika hace parte de CCI Group, grupo con experiencia en soluciones lingüísticas y comunicación intercultural. Nuestra llegada a Colombia refleja una apuesta por ofrecer al mercado local servicios con visión global, estructura profesional y capacidad de adaptación a diferentes industrias y escenarios.
+        Globika hace parte de CCI Group, grupo con experiencia en soluciones lingüísticas y comunicación intercultural. Nuestra llegada a Colombia refleja una apuesta por ofrecer al mercado local servicios con visión global, estructura profesional y capacidad de adaptación a diferentes industrias y escenarios.
       </p>
       <p class="institutional-text1">
         Combinamos experiencia, procesos y enfoque de servicio para atender las necesidades del país con una propuesta sólida, confiable y cercana.
       </p>
       <div class="institutional-cta" role="region" aria-label="CTA intermedio">
-        <h3 class="cta-title">¿Necesitas apoyo lingüístico en Colombia<span class="rating-simbolos">?</span></h3>
-        <p class="cta-desc">En Glóbika estamos listos para ayudarte con interpretación, traducción, notarización y soluciones multilingües adaptadas a tu necesidad.</p>
+        <h3 class="cta-title">¿Necesitas apoyo lingüístico<span class="rating-simbolos">?</span></h3>
+        <p class="cta-desc">En Globika estamos listos para acompañarle con interpretación, traducción, notarización remota y soluciones multilingües adaptadas a su necesidad.</p>
         <div class="cta-buttons">
           <a href="#contact" class="cta-btn cta-primary arrow">Hablar con un asesor <span class="arrow">›</span></a>
           <a href="#contact" class="cta-btn cta-outline arrow">Solicitar servicio <span class="arrow">›</span></a>

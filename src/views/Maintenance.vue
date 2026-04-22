@@ -27,13 +27,13 @@
 
       <!-- Título principal -->
       <h1 class="maintenance-title">
-        🔧 Glóbika en <span class="highlight">Mantenimiento</span>
+        🔧 Globika en <span class="highlight">Mantenimiento</span>
       </h1>
 
       <!-- Descripción -->
       <div class="maintenance-description">
         <p class="main-message">
-          Estamos actualizando las plataformas de Glóbika en Colombia para ofrecerte servicios lingüísticos y soluciones tecnológicas más rápidas y seguras.
+          Estamos actualizando las plataformas de Globika en Colombia para ofrecerte servicios lingüísticos y soluciones tecnológicas más rápidas y seguras.
         </p>
         <p class="sub-message">
           Si necesitas soporte urgente, contáctanos por teléfono o WhatsApp; nuestro equipo estará encantado de ayudarte.
@@ -68,7 +68,7 @@
         <div class="contact-card">
             <div class="contact-icon">📞</div>
             <div class="contact-content">
-              <div class="contact-label">Contacto Glóbika</div>
+              <div class="contact-label">Contacto Globika</div>
               <a href="tel:+573118715539" class="contact-link">
                 Tel: +57 311 871 5539
               </a>
@@ -80,7 +80,7 @@
       <!-- WhatsApp contacto
       <div class="whatsapp-contact">
         <div class="whatsapp-title">O escribenos directo al Whatsapp</div>
-          <a href="https://wa.me/573118715539?text=Hola,%20necesito%20ayuda%20con%20Glóbika"
+          <a href="https://wa.me/573118715539?text=Hola,%20necesito%20ayuda%20con%20Globika"
             class="whatsapp-btn"
             target="_blank"
             rel="noopener noreferrer">
@@ -105,8 +105,8 @@
 
     <!-- Footer con información adicional -->
       <div class="maintenance-footer">
-      <p>&copy; {{ currentYear }} Glóbika. Todos los derechos reservados.</p>
-      <p class="small-muted">Glóbika - Soluciones lingüísticas y tecnológicas.</p>
+      <p>&copy; {{ currentYear }} Globika. Todos los derechos reservados.</p>
+      <p class="small-muted">Globika - Soluciones lingüísticas y tecnológicas.</p>
     </div>
   </div>
 </template>

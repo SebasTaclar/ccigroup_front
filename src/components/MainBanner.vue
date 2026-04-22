@@ -14,7 +14,7 @@
       <p class="banner-subtitle">Interpretación<span class="rating-simbolos">,</span> traducción<span class="rating-simbolos">,</span> notarización remota y apoyo multilingüe para empresas<span class="rating-simbolos">,</span> instituciones y personas que necesitan comunicarse con claridad y confianza<span class="rating-simbolos">.</span></p>
 
       <p class="banner-description">
-        Glóbika es la operación latinoamericana de CCI Group, empresa con más de 14 años de experiencia en servicios lingüísticos para agencias federales, corporaciones y organizaciones internacionales en Estados Unidos. Desde Colombia, acercamos esa misma capacidad a Latinoamérica con una propuesta adaptada al contexto y las necesidades del mercado local.
+        Globika es la operación latinoamericana de CCI Group, empresa con más de 14 años de experiencia en servicios lingüísticos para agencias federales, corporaciones y organizaciones internacionales en Estados Unidos. Desde Colombia, acercamos esa misma capacidad a Latinoamérica con una propuesta adaptada al contexto y las necesidades del mercado local.
       </p>
 
       <div class="banner-buttons">
