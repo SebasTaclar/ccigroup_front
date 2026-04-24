@@ -25,7 +25,7 @@
           Conocer nuestros servicios
         </button>
         <a
-          href="https://a7oqb2wb89ps4x.projectwebtec9.com/"
+          href="https://www.myccigroup.com/"
           target="_blank"
           rel="noopener"
           class="btn contact-btn"

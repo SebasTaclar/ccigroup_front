@@ -279,7 +279,7 @@ onBeforeUnmount(() => {
   color: #e5e7eb;
   font-size: 18px;
   line-height: 1.7;
-  margin: 0 0 10px 0;
+  margin: 0 0 5rem 0;
   max-width: 1000px;
   text-align: justify;
 }
@@ -294,6 +294,7 @@ onBeforeUnmount(() => {
 
 .wsua-stats {
   margin-top: 8px;
+  text-align: center;
 }
 
 .wsua-stats-header {
@@ -306,7 +307,7 @@ onBeforeUnmount(() => {
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: #ffffff;
-  margin: 0 0 4px 0;
+  margin: 5.5rem 0 4px 0;
   text-align: center;
 }
 
@@ -368,7 +369,7 @@ onBeforeUnmount(() => {
   }
 
   .wsua-stats-list {
-    grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .wsua-feature-grid {
@@ -377,6 +378,11 @@ onBeforeUnmount(() => {
 
   .wsua-intro-title {
     font-size: 24px;
+    text-align: center;
+  }
+
+  .wsua-stat-number{
+  letter-spacing: 0.0em;
   }
 
   .wsua-intro-text {
