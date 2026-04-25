@@ -160,7 +160,6 @@
     <TestimonialsSection />
 
     <!-- Resources and Blog Section (temporalmente reemplazado por BusinessSolutionsSection) -->
-    <BusinessSolutionsSection />
     <ClosingSection />
 
     <!-- Botón flotante de WhatsApp -->
@@ -191,7 +190,6 @@ import ServicesSection from '@/components/ServicesSection.vue';
 import IndustriesSection from '@/components/IndustriesSection.vue';
 import ProcessSection from '@/components/ProcessSection.vue';
 import TestimonialsSection from '@/components/TestimonialsSection.vue';
-import BusinessSolutionsSection from '@/components/BusinessSolutionsSection.vue';
 import ClosingSection from '@/components/ClosingSection.vue';
 import ContactSection from '@/components/ContactSection.vue';
 import Footer_ from '@/components/Footer_.vue';

@@ -2,13 +2,7 @@
   <section class="institutional-section" aria-labelledby="institutional-title">
     <div class="institutional-overlay"></div>
     <div class="institutional-content">
-      <h2 id="institutional-title" class="institutional-title">Respaldo internacional para Colombia</h2>
-      <p class="institutional-text">
-        Globika hace parte de CCI Group, grupo con experiencia en soluciones lingüísticas y comunicación intercultural. Nuestra llegada a Colombia refleja una apuesta por ofrecer al mercado local servicios con visión global, estructura profesional y capacidad de adaptación a diferentes industrias y escenarios.
-      </p>
-      <p class="institutional-text1">
-        Combinamos experiencia, procesos y enfoque de servicio para atender las necesidades del país con una propuesta sólida, confiable y cercana.
-      </p>
+
       <div class="institutional-cta" role="region" aria-label="CTA intermedio">
         <h3 class="cta-title">¿Necesitas apoyo lingüístico<span class="rating-simbolos">?</span></h3>
         <p class="cta-desc">En Globika estamos listos para acompañarle con interpretación, traducción, notarización remota y soluciones multilingües adaptadas a su necesidad.</p>
@@ -33,9 +27,11 @@ defineOptions({ name: 'TestimonialsSection' })
   background-position: center;
   color: #282828;
   padding: 50px clamp(20px, 5vw, 80px);
-  min-height: 300px;
+  min-height: 320px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .rating-simbolos{
@@ -47,10 +43,12 @@ defineOptions({ name: 'TestimonialsSection' })
   position: relative;
   z-index: 2;
   max-width: 1100px;
-  margin: 0 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  align-items: center;
+  text-align: center;
 }
 
 .institutional-title {
@@ -66,6 +64,7 @@ defineOptions({ name: 'TestimonialsSection' })
   line-height: 1.6;
   text-align: justify;
   font-weight: 450;
+
 }
 
 .institutional-text1 {
@@ -83,11 +82,13 @@ defineOptions({ name: 'TestimonialsSection' })
   flex-direction: column;
   gap: 12px;
   max-width: 780px;
+  text-align: center;
+  align-items: center;
 }
 
 .cta-title {
   color: #282828;
-  font-size: clamp(18px, 2.2vw, 32px);
+  font-size: 32px;
   margin: 0;
   font-weight: 400;
 }
@@ -97,6 +98,7 @@ defineOptions({ name: 'TestimonialsSection' })
   margin: 0;
   font-size: 18px;
   font-weight: 450;
+  margin-bottom: 20px;
 }
 
 .cta-buttons {
@@ -104,6 +106,7 @@ defineOptions({ name: 'TestimonialsSection' })
   gap: 12px;
   margin-top: 6px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .cta-btn {
@@ -161,16 +164,16 @@ defineOptions({ name: 'TestimonialsSection' })
 
 @media (max-width: 768px) {
   .institutional-section { padding: 48px 12px; }
-  .institutional-content { padding: 0 8px; text-align: left; }
+  .institutional-content { padding: 0 8px; text-align: center; }
   .institutional-text,
   .institutional-text1 { text-align: justify; font-size: 16px;}
-  .institutional-cta { align-items: flex-start; }
-  .cta-buttons { flex-direction: column; width: 100%; }
+  .institutional-cta { align-items: center; }
+  .cta-buttons { flex-direction: column; width: 100%; align-items: center; }
   .cta-btn { width: 100%; padding: 12px 18px; }
   .cta-primary{font-size: 16px;}
   .cta-outline{font-size: 16px;}
   .cta-title { font-size: clamp(24px, 3.6vw, 24px); }
-  .cta-desc { font-size: 16px; text-align: justify;}
+  .cta-desc { font-size: 16px; text-align: center;}
   .institutional-title { font-size: clamp(24px, 3.6vw, 24px); }
 
 }

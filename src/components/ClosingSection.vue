@@ -19,7 +19,7 @@ defineOptions({ name: 'ClosingSection' })
   background-size: cover;
   background-position: center;
   color: #fff;
-  padding: 90px clamp(20px, 5vw, 80px);
+  padding: 70px clamp(20px, 5vw, 80px);
   min-height: 260px;
   display: flex;
   align-items: center;
@@ -53,6 +53,7 @@ defineOptions({ name: 'ClosingSection' })
   font-size: clamp(20px, 3.2vw, 32px);
   font-weight: 400;
   margin: 0;
+  text-align: center;
 }
 
 .closing-text {
@@ -60,7 +61,7 @@ defineOptions({ name: 'ClosingSection' })
   font-size: clamp(14px, 1.6vw, 18px);
   line-height: 1.6;
   margin: 0;
-  text-align: justify;
+  text-align: center;
   font-weight: 400;
 }
 
@@ -68,6 +69,6 @@ defineOptions({ name: 'ClosingSection' })
   .closing-section { padding: 48px 12px; }
   .closing-content { padding: 0 8px; text-align: center; }
   .closing-text { text-align: center; font-size: 16px; }
-  .closing-title { font-size: 24px; }
+  .closing-title { font-size: 21px; }
 }
 </style>

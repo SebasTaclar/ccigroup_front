@@ -28,7 +28,7 @@
           </button> -->
         </div>
 
-        <div class="image-column">
+        <!-- <div class="image-column">
           <div class="industries-image-wrapper">
             <img
               src="https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/04/strategy-2.jpg"
@@ -36,7 +36,7 @@
               class="industries-image"
             />
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -66,7 +66,7 @@ const industryColumns = computed(() => {
 
 <style scoped>
 .industries-section {
-  padding: 100px clamp(20px, 5vw, 80px);
+  padding: 70px clamp(20px, 5vw, 80px);
   background: linear-gradient(135deg, #ffffff 0%, #f7f7f7 100%);
 }
 
@@ -79,10 +79,17 @@ const industryColumns = computed(() => {
   display: flex;
   align-items: stretch;
   gap: 48px;
+  justify-content: flex-start;
 }
 
 .copy-column {
   flex: 1.1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0;
+  padding: 0 12px;
 }
 
 .image-column {
@@ -105,33 +112,37 @@ const industryColumns = computed(() => {
   color: #282828;
   margin: 0 0 16px 0;
   letter-spacing: 1px;
+  text-align: left;
 }
 
 .section-subtitle {
   font-size: 18px;
   color: #757575;
-  margin: 0 0 28px 0;
-  max-width: 620px;
+  margin: 0 0 18px 0;
   line-height: 1.8;
   font-weight: 400;
-  text-align: justify;
+  text-align: left;
 }
 
 .section-subtitle1 {
   font-size: 16px;
   color: #757575;
   margin: 0 0 28px 0;
-  max-width: 620px;
   line-height: 1.8;
   font-weight: 400;
-  text-align: justify;
+  text-align: left;
+  width: 90%;
 }
 
 .industries-lists {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px 40px;
-  margin-bottom: 32px;
+  margin: 0 0 32px 0;
+  text-align: left;
+  justify-items: start;
+  width: 100%;
+  max-width: 900px;
 }
 
 .industry-list {
@@ -145,10 +156,11 @@ const industryColumns = computed(() => {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 0;
+  padding: 10px 10px;
   font-size: 16px;
   color: var(--slate-700);
   border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+  justify-content: flex-start;
 }
 
 .bullet {
@@ -235,5 +247,9 @@ const industryColumns = computed(() => {
     text-align: justify;
   }
 
+  .section-subtitle1 {
+    text-align: justify;
+    width: 100%;
+  }
 }
 </style>
