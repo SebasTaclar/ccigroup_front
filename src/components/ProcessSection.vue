@@ -17,7 +17,7 @@
 
         <div class="process-image-wrapper">
           <img
-            src="https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/04/asl-fEDEERAL-1024x572.jpg"
+            src="https://myccigroup.com/wp-content/uploads/2026/04/asl-fEDEERAL-1024x572.jpg"
             alt="Cliente hablando por telÉfono con un intÉrprete"
             class="process-image"
           />

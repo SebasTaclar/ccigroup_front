@@ -63,7 +63,7 @@ const services = ref<Service[]>([
     icon: 'fas fa-headset',
     title: 'Interpretación',
     description: 'Facilitamos la comunicación oral en tiempo real entre personas que hablan diferentes idiomas, con apoyo profesional y precisión contextual.',
-    image: 'https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/03/Legal-1536x1024.jpg',
+    image: 'https://myccigroup.com/wp-content/uploads/2026/03/Legal-1536x1024.jpg',
     features: []
   },
   {
@@ -71,14 +71,14 @@ const services = ref<Service[]>([
     title: 'Traducción',
     description: 'Traducimos documentos con enfoque profesional, cuidando el sentido, la terminología y la intención del contenido original.',
     image:
-      'https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/03/edited_photo_v2-1536x1147.jpg',
+      'https://myccigroup.com/wp-content/uploads/2026/03/edited_photo_v2-1536x1147.jpg',
     features: []
   },
   {
     icon: 'fas fa-certificate',
     title: 'Notarización Remota',
     description: 'Apoyamos procesos documentales que requieren formalidad y respaldo en la presentación de información para trámites y gestiones específicas.',
-    image: 'https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/04/LAB0292-1.jpg',
+    image: 'https://myccigroup.com/wp-content/uploads/2026/04/LAB0292-1.jpg',
     features: []
   },
   {
@@ -86,7 +86,7 @@ const services = ref<Service[]>([
     title: 'Soluciones Globales de Talento',
     description: 'Acompañamos organizaciones que necesitan operar, atender usuarios o relacionarse con públicos multilingües de manera consistente y profesional.',
     image:
-      'https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/03/66a50b2985f716cda4bbfe35_Solutions_cultural-awareness.jpg',
+      'https://myccigroup.com/wp-content/uploads/2026/03/66a50b2985f716cda4bbfe35_Solutions_cultural-awareness.jpg',
     features: []
   },
   {
@@ -94,7 +94,7 @@ const services = ref<Service[]>([
     title: 'Apoyo para eventos',
     description: 'Brindamos soporte lingüístico para encuentros empresariales, institucionales, académicos y sectoriales donde se requiere comunicación fluida entre asistentes de distintos idiomas.',
     image:
-      'https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/04/mid-section-of-female-teacher-and-girl-talking-to-S4K96GN-1-1536x1024.jpg',
+      'https://myccigroup.com/wp-content/uploads/2026/04/mid-section-of-female-teacher-and-girl-talking-to-S4K96GN-1-1536x1024.jpg',
     features: []
   },
 

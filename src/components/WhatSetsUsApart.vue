@@ -389,5 +389,9 @@ onBeforeUnmount(() => {
     font-size: 16px;
     text-align: justify;
   }
+
+  .wsua-stat-number{
+    font-size: 35px;
+  }
 }
 </style>
