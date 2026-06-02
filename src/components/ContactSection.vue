@@ -85,7 +85,7 @@
         <div class="info-column">
           <div class="info-content">
             <img
-              src="https://a7oqb2wb89ps4x.projectwebtec9.com/wp-content/uploads/2026/03/pexels-karola-g-5904094-1024x682.webp"
+              src="https://myccigroup.com/wp-content/uploads/2026/03/pexels-karola-g-5904094-1024x682.webp"
               alt="Contacto"
               class="contact-side-image"
             />
