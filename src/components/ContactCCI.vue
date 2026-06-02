@@ -27,7 +27,7 @@
               <div class="detail-icon">🌐</div>
               <div class="detail-text">
                 <h4>Disponibilidad</h4>
-                <p>24/7 - Servicio continuo</p>
+                <p>24/7 - Servicio continuo.</p>
               </div>
             </div>
 
