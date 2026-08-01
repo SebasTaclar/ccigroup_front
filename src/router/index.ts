@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { authService } from '@/services/api'
 import Home from '@/views/Home.vue'
+import Maintenance from '@/views/Maintenance.vue'
 
 declare module 'vue-router' {
   interface RouteMeta {
@@ -18,6 +19,11 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: Home,
+    },
+    {
+      path: '/maintenance',
+      name: 'maintenance',
+      component: Maintenance,
     },
     {
       path: '/login',
@@ -157,6 +163,13 @@ const router = createRouter({
 
 // Guard de navegación global
 router.beforeEach((to, from, next) => {
+  const isMaintenanceMode = true
+
+  if (isMaintenanceMode && to.path !== '/maintenance') {
+    next('/maintenance')
+    return
+  }
+
   const isAuthenticated = authService.isAuthenticated()
   const userRole = authService.getUserRole()
 
